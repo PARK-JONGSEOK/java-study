@@ -1,0 +1,7 @@
+*.class
+*.txt
+*.ser
+*.classpath
+*.project
+*.settings
+*.jar
