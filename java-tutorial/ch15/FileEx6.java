@@ -13,7 +13,7 @@ class FileEx6 {
 		String keyword = args[1];
 
 		if(!dir.exists() || !dir.isDirectory()) {
-			System.out.println("À¯È¿ÇÏÁö ¾ÊÀº µğ·ºÅä¸®ÀÔ´Ï´Ù.");
+			System.out.println("ìœ íš¨í•˜ì§€ ì•Šì€ ë””ë ‰í† ë¦¬ì…ë‹ˆë‹¤.");
 			System.exit(0);
 		} 
 
@@ -24,7 +24,7 @@ class FileEx6 {
 		}
 
 		System.out.println();
-		System.out.println("ÃÑ " + found + "°³ÀÇ ¶óÀÎ¿¡¼­ '" + keyword + "'À»/¸¦ ¹ß°ßÇÏ¿´½À´Ï´Ù. ");
+		System.out.println("ì´ " + found + "ê°œì˜ ë¼ì¸ì—ì„œ '" + keyword + "'ì„/ë¥¼ ë°œê²¬í•˜ì˜€ìŠµë‹ˆë‹¤. ");
 	} // main
 
 	public static void findInFiles(File dir, String keyword) throws IOException

@@ -18,6 +18,6 @@ class MessageFormatEx4 {
 			System.out.println(MessageFormat.format(msg, objs));
 		}
 
-        s.close();	// ÀÛ¾÷ÀÌ ³¡³µÀ¸´Ï Scanner¿¡¼­ »ç¿ëÇÑ ÆÄÀÏÀ» ´İ¾Æ ÁØ´Ù.
+        s.close();	// ì‘ì—…ì´ ëë‚¬ìœ¼ë‹ˆ Scannerì—ì„œ ì‚¬ìš©í•œ íŒŒì¼ì„ ë‹«ì•„ ì¤€ë‹¤.
 	} // main
 }

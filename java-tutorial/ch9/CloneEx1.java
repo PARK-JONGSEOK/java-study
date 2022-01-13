@@ -14,7 +14,7 @@ class Point implements Cloneable {
 	public Object clone() {
 		Object obj = null;
 		try {
-			obj = super.clone();  // clone()Àº ¹İµå½Ã ¿¹¿ÜÃ³¸®¸¦ ÇØÁÖ¾î¾ß ÇÑ´Ù.
+			obj = super.clone();  // clone()ì€ ë°˜ë“œì‹œ ì˜ˆì™¸ì²˜ë¦¬ë¥¼ í•´ì£¼ì–´ì•¼ í•œë‹¤.
 		} catch(CloneNotSupportedException e) {}
 		return obj;
 	}
@@ -23,7 +23,7 @@ class Point implements Cloneable {
 class CloneEx1 {
 	public static void main(String[] args){
 		Point original = new Point(3, 5);
-		Point copy = (Point)original.clone(); // º¹Á¦(clone)ÇØ¼­ »õ·Î¿î °´Ã¼¸¦ »ı¼º
+		Point copy = (Point)original.clone(); // ë³µì œ(clone)í•´ì„œ ìƒˆë¡œìš´ ê°ì²´ë¥¼ ìƒì„±
 		System.out.println(original);
 		System.out.println(copy);
 	}

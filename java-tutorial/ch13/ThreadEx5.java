@@ -10,7 +10,7 @@
 			System.out.print("-");
 		}
 
-		System.out.print("�ҿ�ð�1:" + (System.currentTimeMillis() - ThreadEx5.startTime));
+		System.out.print("소요시간1:" + (System.currentTimeMillis() - ThreadEx5.startTime));
 	}
 }
 
@@ -20,6 +20,6 @@ class ThreadEx5_1 extends Thread {
 			System.out.print("|");
 		}
 
-		System.out.print("�ҿ�ð�2:" + (System.currentTimeMillis() - ThreadEx5.startTime));
+		System.out.print("소요시간2:" + (System.currentTimeMillis() - ThreadEx5.startTime));
 	}
 }

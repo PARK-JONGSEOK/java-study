@@ -7,9 +7,9 @@ class MyStack extends Vector {
     }
 
     public Object pop() {
-		Object obj = peek();	 // Stack¿¡ ÀúÀåµÈ ¸¶Áö¸· ¿ä¼Ò¸¦ ÀÐ¾î¿Â´Ù.
-		//   ¸¸ÀÏ StackÀÌ ºñ¾îÀÖÀ¸¸é peek()¸Þ¼­µå°¡ EmptyStackExceptionÀ» ¹ß»ý½ÃÅ²´Ù.
-        //   ¸¶Áö¸· ¿ä¼Ò¸¦ »èÁ¦ÇÑ´Ù. ¹è¿­ÀÇ index°¡ 0 ºÎÅÍ ½ÃÀÛÇÏ¹Ç·Î 1À» »©ÁØ´Ù.
+		Object obj = peek();	 // Stackì— ì €ìž¥ëœ ë§ˆì§€ë§‰ ìš”ì†Œë¥¼ ì½ì–´ì˜¨ë‹¤.
+		//   ë§Œì¼ Stackì´ ë¹„ì–´ìžˆìœ¼ë©´ peek()ë©”ì„œë“œê°€ EmptyStackExceptionì„ ë°œìƒì‹œí‚¨ë‹¤.
+        //   ë§ˆì§€ë§‰ ìš”ì†Œë¥¼ ì‚­ì œí•œë‹¤. ë°°ì—´ì˜ indexê°€ 0 ë¶€í„° ì‹œìž‘í•˜ë¯€ë¡œ 1ì„ ë¹¼ì¤€ë‹¤.
 		removeElementAt(size() - 1); 
 
 		return obj;
@@ -20,7 +20,7 @@ class MyStack extends Vector {
 
 		if (len == 0)
 			throw new EmptyStackException();
-        // ¸¶Áö¸· ¿ä¼Ò¸¦ ¹ÝÈ¯ÇÑ´Ù. ¹è¿­ÀÇ index°¡ 0 ºÎÅÍ ½ÃÀÛÇÏ¹Ç·Î 1À» »©ÁØ´Ù.
+        // ë§ˆì§€ë§‰ ìš”ì†Œë¥¼ ë°˜í™˜í•œë‹¤. ë°°ì—´ì˜ indexê°€ 0 ë¶€í„° ì‹œìž‘í•˜ë¯€ë¡œ 1ì„ ë¹¼ì¤€ë‹¤.
 		return elementAt(len - 1);	
     }
 
@@ -29,13 +29,13 @@ class MyStack extends Vector {
     }
     
     public int search(Object o) {
-		int i = lastIndexOf(o);	// ³¡¿¡¼­ºÎÅÍ °´Ã¼¸¦ Ã£´Â´Ù. 
-		// ¹ÝÈ¯°ªÀº ÀúÀåµÈ À§Ä¡(¹è¿­ÀÇ index)ÀÌ´Ù.
-		if (i >= 0) { // °´Ã¼¸¦ Ã£Àº °æ¿ì
-			return size() - i; // StackÀº ¸Ç À§¿¡ ÀúÀåµÈ °´Ã¼ÀÇ index¸¦ 1·Î Á¤ÀÇÇÏ±â ¶§¹®¿¡
-                               // °è»êÀ» ÅëÇØ¼­ ±¸ÇÑ´Ù.
+		int i = lastIndexOf(o);	// ëì—ì„œë¶€í„° ê°ì²´ë¥¼ ì°¾ëŠ”ë‹¤. 
+		// ë°˜í™˜ê°’ì€ ì €ìž¥ëœ ìœ„ì¹˜(ë°°ì—´ì˜ index)ì´ë‹¤.
+		if (i >= 0) { // ê°ì²´ë¥¼ ì°¾ì€ ê²½ìš°
+			return size() - i; // Stackì€ ë§¨ ìœ„ì— ì €ìž¥ëœ ê°ì²´ì˜ indexë¥¼ 1ë¡œ ì •ì˜í•˜ê¸° ë•Œë¬¸ì—
+                               // ê³„ì‚°ì„ í†µí•´ì„œ êµ¬í•œë‹¤.
 		}
 
-		return - 1;		// ÇØ´ç °´Ã¼¸¦ Ã£Áö ¸øÇÏ¸é -1¸¦ ¹ÝÈ¯ÇÑ´Ù.
+		return - 1;		// í•´ë‹¹ ê°ì²´ë¥¼ ì°¾ì§€ ëª»í•˜ë©´ -1ë¥¼ ë°˜í™˜í•œë‹¤.
 	}
 }

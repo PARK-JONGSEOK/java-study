@@ -7,7 +7,7 @@ class CalendarEx9 {
 		System.out.println("735778 : "+convertDayToDate(735778)); 
 	} 
 
-     // °¢ ´ŞÀÇ ¸¶Áö¸·ÀÏ
+     // ê° ë‹¬ì˜ ë§ˆì§€ë§‰ì¼
 	public static int[] endOfMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; 
 
 	public static boolean isLeapYear(int year) { 
@@ -19,14 +19,14 @@ class CalendarEx9 {
 	} 
 
 	public static int getDayOfWeek(int year, int month, int day) { 
-		// 1~7ÀÇ °ªÀ» ¹İÈ¯ÇÑ´Ù. °á°ú°¡ 1ÀÌ¸é ÀÏ¿äÀÏÀÌ´Ù. 
+		// 1~7ì˜ ê°’ì„ ë°˜í™˜í•œë‹¤. ê²°ê³¼ê°€ 1ì´ë©´ ì¼ìš”ì¼ì´ë‹¤. 
 		return convertDateToDay(year, month, day)%7 + 1; 
 	} 
 
 	public static String convertDayToDate(int day) { 
 		int year=1; 
 		int month=0; 
-		int numOfLeapYear =0; // À±³âÀÇ ¼ö 
+		int numOfLeapYear =0; // ìœ¤ë…„ì˜ ìˆ˜ 
 
 		while(true) { 
 			int aYear = isLeapYear(year)? 366 :365; 
@@ -40,7 +40,7 @@ class CalendarEx9 {
 
 		while(true) { 
 			int endDay = endOfMonth[month]; 
-                     // À±³âÀÌ°í À±´ŞÀÌ Æ÷ÇÔµÇ¾î ÀÖÀ¸¸é, 1ÀÏÀ» ´õ »«´Ù. 
+                     // ìœ¤ë…„ì´ê³  ìœ¤ë‹¬ì´ í¬í•¨ë˜ì–´ ìˆìœ¼ë©´, 1ì¼ì„ ë” ëº€ë‹¤. 
 			if(isLeapYear(year) && month == 1) endDay++;    
 
 			if(day > endDay) { 
@@ -55,25 +55,25 @@ class CalendarEx9 {
 	} 
 
 	public static int convertDateToDay(int year, int month, int day) { 
-		int numOfLeapYear =0; // À±³âÀÇ ¼ö 
+		int numOfLeapYear =0; // ìœ¤ë…„ì˜ ìˆ˜ 
 
-		// Àü³âµµ±îÁöÀÇ À±³âÀÇ ¼ö¸¦ ±¸ÇÑ´Ù. 
+		// ì „ë…„ë„ê¹Œì§€ì˜ ìœ¤ë…„ì˜ ìˆ˜ë¥¼ êµ¬í•œë‹¤. 
 		for(int i=1;i < year; i++) { 
 			if(isLeapYear(i)) 
 				numOfLeapYear++; 
 		} 
 
-		// Àü³âµµ±îÁöÀÇ ÀÏ ¼ö¸¦ ±¸ÇÑ´Ù. 
+		// ì „ë…„ë„ê¹Œì§€ì˜ ì¼ ìˆ˜ë¥¼ êµ¬í•œë‹¤. 
 		int toLastYearDaySum = (year-1) * 365 + numOfLeapYear; 
 
-		// ¿ÃÇØÀÇ ÇöÀç ¿ù±îÁöÀÇ ÀÏ¼ö °è»ê 
+		// ì˜¬í•´ì˜ í˜„ì¬ ì›”ê¹Œì§€ì˜ ì¼ìˆ˜ ê³„ì‚° 
 		int thisYearDaySum =0; 
 
 		for(int i=0; i < month-1; i++) { 
 			thisYearDaySum+=endOfMonth[i]; 
 		} 
 
-		// À±³âÀÌ°í, 2¿ùÀÌ Æ÷ÇÔµÇ¾î ÀÖÀ¸¸é 1ÀÏÀ» Áõ°¡½ÃÅ²´Ù. 
+		// ìœ¤ë…„ì´ê³ , 2ì›”ì´ í¬í•¨ë˜ì–´ ìˆìœ¼ë©´ 1ì¼ì„ ì¦ê°€ì‹œí‚¨ë‹¤. 
 		if (month > 2 && isLeapYear(year))
 			thisYearDaySum++; 
 

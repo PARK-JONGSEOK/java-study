@@ -7,7 +7,7 @@ public class ArrayListLinkedListTest2 {
             add(al);
             add(ll);
 
-            System.out.println("= Á¢±Ù½Ã°£Å×½ºÆ® ="); 
+            System.out.println("= ì ‘ê·¼ì‹œê°„í…ŒìŠ¤íŠ¸ ="); 
             System.out.println("ArrayList :"+access(al)); 
             System.out.println("LinkedList :"+access(ll)); 
 	  }

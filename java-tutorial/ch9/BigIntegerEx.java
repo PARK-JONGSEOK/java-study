@@ -4,9 +4,9 @@ class BigIntegerEx {
 	public static void main(String[] args) throws Exception {
 		BigInteger big =  BigInteger.ONE;
 
-		for(int i=1; i<100;i++) { // 1!ºÎÅÍ 99!±îÁö Ãâ·Â
+		for(int i=1; i<100;i++) { // 1!ë¶€í„° 99!ê¹Œì§€ ì¶œë ¥
 			System.out.printf("%d!=%s%n", i, calcFactorial(i));
-			Thread.sleep(300); // 0.3ÃÊÀÇ Áö¿¬
+			Thread.sleep(300); // 0.3ì´ˆì˜ ì§€ì—°
 		}
 	}
 

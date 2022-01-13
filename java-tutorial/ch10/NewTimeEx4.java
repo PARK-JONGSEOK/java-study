@@ -17,7 +17,7 @@ class NewTimeEx4 {
 		System.out.println("DAY="  +pe.get(ChronoUnit.DAYS));  
 
 		LocalTime time1 = LocalTime.of( 0, 0, 0); 
-		LocalTime time2 = LocalTime.of(12,34,56); // 12½Ã°£ 23ºÐ 56ÃÊ
+		LocalTime time2 = LocalTime.of(12,34,56); // 12ì‹œê°„ 23ë¶„ 56ì´ˆ
 
 		Duration du = Duration.between(time1, time2);
 

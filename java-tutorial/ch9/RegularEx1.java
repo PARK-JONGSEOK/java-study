@@ -1,4 +1,4 @@
-import java.util.regex.*;	// Pattern°ú Matcher°¡ ¼ÓÇÑ ÆĞÅ°Áö
+import java.util.regex.*;	// Patternê³¼ Matcherê°€ ì†í•œ íŒ¨í‚¤ì§€
 
 class RegularEx1 {
 	public static void main(String[] args) 
@@ -6,7 +6,7 @@ class RegularEx1 {
 		String[] data = {"bat", "baby", "bonus",
 				    "cA","ca", "co", "c.", "c0", "car","combat","count",
 				    "date", "disc"};		
-		Pattern p = Pattern.compile("c[a-z]*");	// c·Î ½ÃÀÛÇÏ´Â ¼Ò¹®ÀÚ¿µ´Ü¾î
+		Pattern p = Pattern.compile("c[a-z]*");	// cë¡œ ì‹œì‘í•˜ëŠ” ì†Œë¬¸ìì˜ë‹¨ì–´
 
 		for(int i=0; i < data.length; i++) {
 			Matcher m = p.matcher(data[i]);

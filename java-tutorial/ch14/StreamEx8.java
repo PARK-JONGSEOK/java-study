@@ -6,9 +6,9 @@ import static java.util.Comparator.*;
 
 class Student {
 	String name;
-	boolean isMale; // ¼ºº°
-	int hak;		// ÇĞ³â
-	int ban;		// ¹İ
+	boolean isMale; // ì„±ë³„
+	int hak;		// í•™ë…„
+	int ban;		// ë°˜
 	int score;
 
 	Student(String name, boolean isMale, int hak, int ban, int score) { 
@@ -26,7 +26,7 @@ class Student {
 	int		getScore() { return score;}
 
 	public String toString() { 
-		return String.format("[%s, %s, %dÇĞ³â %d¹İ, %3dÁ¡]", name, isMale ? "³²":"¿©", hak, ban, score); 
+		return String.format("[%s, %s, %dí•™ë…„ %dë°˜, %3dì ]", name, isMale ? "ë‚¨":"ì—¬", hak, ban, score); 
 	}
 
 	enum Level {
@@ -37,28 +37,28 @@ class Student {
 class StreamEx8 {
 	public static void main(String[] args) {
 		Student[] stuArr = {
-			new Student("³ªÀÚ¹Ù", true,  1, 1, 300),	
-			new Student("±èÁö¹Ì", false, 1, 1, 250),	
-			new Student("±èÀÚ¹Ù", true,  1, 1, 200),	
-			new Student("ÀÌÁö¹Ì", false, 1, 2, 150),	
-			new Student("³²ÀÚ¹Ù", true,  1, 2, 100),	
-			new Student("¾ÈÁö¹Ì", false, 1, 2,  50),	
-			new Student("È²Áö¹Ì", false, 1, 3, 100),	
-			new Student("°­Áö¹Ì", false, 1, 3, 150),	
-			new Student("ÀÌÀÚ¹Ù", true,  1, 3, 200),	
+			new Student("ë‚˜ìë°”", true,  1, 1, 300),	
+			new Student("ê¹€ì§€ë¯¸", false, 1, 1, 250),	
+			new Student("ê¹€ìë°”", true,  1, 1, 200),	
+			new Student("ì´ì§€ë¯¸", false, 1, 2, 150),	
+			new Student("ë‚¨ìë°”", true,  1, 2, 100),	
+			new Student("ì•ˆì§€ë¯¸", false, 1, 2,  50),	
+			new Student("í™©ì§€ë¯¸", false, 1, 3, 100),	
+			new Student("ê°•ì§€ë¯¸", false, 1, 3, 150),	
+			new Student("ì´ìë°”", true,  1, 3, 200),	
 
-			new Student("³ªÀÚ¹Ù", true,  2, 1, 300),	
-			new Student("±èÁö¹Ì", false, 2, 1, 250),	
-			new Student("±èÀÚ¹Ù", true,  2, 1, 200),	
-			new Student("ÀÌÁö¹Ì", false, 2, 2, 150),	
-			new Student("³²ÀÚ¹Ù", true,  2, 2, 100),	
-			new Student("¾ÈÁö¹Ì", false, 2, 2,  50),	
-			new Student("È²Áö¹Ì", false, 2, 3, 100),	
-			new Student("°­Áö¹Ì", false, 2, 3, 150),	
-			new Student("ÀÌÀÚ¹Ù", true,  2, 3, 200)	
+			new Student("ë‚˜ìë°”", true,  2, 1, 300),	
+			new Student("ê¹€ì§€ë¯¸", false, 2, 1, 250),	
+			new Student("ê¹€ìë°”", true,  2, 1, 200),	
+			new Student("ì´ì§€ë¯¸", false, 2, 2, 150),	
+			new Student("ë‚¨ìë°”", true,  2, 2, 100),	
+			new Student("ì•ˆì§€ë¯¸", false, 2, 2,  50),	
+			new Student("í™©ì§€ë¯¸", false, 2, 3, 100),	
+			new Student("ê°•ì§€ë¯¸", false, 2, 3, 150),	
+			new Student("ì´ìë°”", true,  2, 3, 200)	
 		};
 
-		System.out.printf("1. ´Ü¼ø±×·ìÈ­(¹İº°·Î ±×·ìÈ­)%n");
+		System.out.printf("1. ë‹¨ìˆœê·¸ë£¹í™”(ë°˜ë³„ë¡œ ê·¸ë£¹í™”)%n");
 		Map<Integer, List<Student>> stuByBan = Stream.of(stuArr)
 				                                     .collect(groupingBy(Student::getBan));
 		
@@ -68,7 +68,7 @@ class StreamEx8 {
 			}
 		}
 
-		System.out.printf("%n2. ´Ü¼ø±×·ìÈ­(¼ºÀûº°·Î ±×·ìÈ­)%n");
+		System.out.printf("%n2. ë‹¨ìˆœê·¸ë£¹í™”(ì„±ì ë³„ë¡œ ê·¸ë£¹í™”)%n");
 		Map<Student.Level, List<Student>> stuByLevel = Stream.of(stuArr)
 				.collect(groupingBy(s-> {
 						 if(s.getScore() >= 200) return Student.Level.HIGH;
@@ -86,7 +86,7 @@ class StreamEx8 {
 			System.out.println();
 		}
 
-		System.out.printf("%n3. ´Ü¼ø±×·ìÈ­ + Åë°è(¼ºÀûº° ÇĞ»ı¼ö)%n");
+		System.out.printf("%n3. ë‹¨ìˆœê·¸ë£¹í™” + í†µê³„(ì„±ì ë³„ í•™ìƒìˆ˜)%n");
 		Map<Student.Level, Long> stuCntByLevel = Stream.of(stuArr)
 				.collect(groupingBy(s-> {
 						 if(s.getScore() >= 200) return Student.Level.HIGH;
@@ -95,7 +95,7 @@ class StreamEx8 {
 				}, counting()));
 
 		for(Student.Level key : stuCntByLevel.keySet())
-			System.out.printf("[%s] - %d¸í, ", key, stuCntByLevel.get(key));
+			System.out.printf("[%s] - %dëª…, ", key, stuCntByLevel.get(key));
 		System.out.println();
 /*
 		for(List<Student> level : stuByLevel.values()) {
@@ -105,7 +105,7 @@ class StreamEx8 {
 			}
 		}
 */
-		System.out.printf("%n4. ´ÙÁß±×·ìÈ­(ÇĞ³âº°, ¹İº°)%n");
+		System.out.printf("%n4. ë‹¤ì¤‘ê·¸ë£¹í™”(í•™ë…„ë³„, ë°˜ë³„)%n");
 		Map<Integer, Map<Integer, List<Student>>> stuByHakAndBan =
           Stream.of(stuArr)
 				.collect(groupingBy(Student::getHak,
@@ -120,7 +120,7 @@ class StreamEx8 {
 			}
 		}
 
-		System.out.printf("%n5. ´ÙÁß±×·ìÈ­ + Åë°è(ÇĞ³âº°, ¹İº° 1µî)%n");
+		System.out.printf("%n5. ë‹¤ì¤‘ê·¸ë£¹í™” + í†µê³„(í•™ë…„ë³„, ë°˜ë³„ 1ë“±)%n");
 		Map<Integer, Map<Integer, Student>> topStuByHakAndBan = Stream.of(stuArr)
 				.collect(groupingBy(Student::getHak,
 						 groupingBy(Student::getBan,
@@ -135,7 +135,7 @@ class StreamEx8 {
 			for(Student s : ban.values())
 				System.out.println(s);
 
-		System.out.printf("%n6. ´ÙÁß±×·ìÈ­ + Åë°è(ÇĞ³âº°, ¹İº° ¼ºÀû±×·ì)%n");
+		System.out.printf("%n6. ë‹¤ì¤‘ê·¸ë£¹í™” + í†µê³„(í•™ë…„ë³„, ë°˜ë³„ ì„±ì ê·¸ë£¹)%n");
 		Map<String, Set<Student.Level>> stuByScoreGroup = Stream.of(stuArr)
 			.collect(groupingBy(s-> s.getHak() + "-" + s.getBan(),
 					mapping(s-> {
@@ -150,5 +150,5 @@ class StreamEx8 {
 		for(String key : keySet2) {
 			System.out.println("["+key+"]" + stuByScoreGroup.get(key));
 		}
-	}  // mainÀÇ ³¡
+	}  // mainì˜ ë
 }

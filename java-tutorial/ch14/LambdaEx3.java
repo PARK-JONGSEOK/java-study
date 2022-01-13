@@ -11,7 +11,7 @@ class Outer {
 
 		void method(int i) {  // 	void method(final int i) {
 			int val=30; // final int val=30;
-//			i = 10;      // ¿¡·¯. »ó¼öÀÇ °ªÀ» º¯°æÇÒ ¼ö ¾øÀ½.
+//			i = 10;      // ì—ëŸ¬. ìƒìˆ˜ì˜ ê°’ì„ ë³€ê²½í•  ìˆ˜ ì—†ìŒ.
 
 			MyFunction f = () -> {
 				System.out.println("             i :" + i);
@@ -22,8 +22,8 @@ class Outer {
 
 			f.myMethod();
 		}
-	} // InnerÅ¬·¡½ºÀÇ ³¡
-} // OuterÅ¬·¡½ºÀÇ ³¡
+	} // Innerí´ë˜ìŠ¤ì˜ ë
+} // Outerí´ë˜ìŠ¤ì˜ ë
 
 class LambdaEx3 {
 	public static void main(String args[]) {

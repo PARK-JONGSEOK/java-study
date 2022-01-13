@@ -17,7 +17,7 @@ class TreeMapEx1 {
 
 		Iterator it = map.entrySet().iterator();
 
-		System.out.println("= ±âº»Á¤·Ä =");
+		System.out.println("= ê¸°ë³¸ì •ë ¬ =");
 		while(it.hasNext()) {
 			Map.Entry entry = (Map.Entry)it.next();
 			int value = ((Integer)entry.getValue()).intValue();
@@ -25,7 +25,7 @@ class TreeMapEx1 {
 		}
 		System.out.println();
 
-		// mapÀ» ArrayList·Î º¯È¯ÇÑ ´ÙÀ½¿¡ Collectons.sort()·Î Á¤·Ä
+		// mapì„ ArrayListë¡œ ë³€í™˜í•œ ë‹¤ìŒì— Collectons.sort()ë¡œ ì •ë ¬
 		Set set = map.entrySet();
 		List list = new ArrayList(set);	// ArrayList(Collection c) 
 		
@@ -34,7 +34,7 @@ class TreeMapEx1 {
 
 		it = list.iterator();
 
-		System.out.println("= °ªÀÇ Å©±â°¡ Å« ¼ø¼­·Î Á¤·Ä =");		
+		System.out.println("= ê°’ì˜ í¬ê¸°ê°€ í° ìˆœì„œë¡œ ì •ë ¬ =");		
 		while(it.hasNext()) {
 			Map.Entry entry = (Map.Entry)it.next();
 			int value = ((Integer)entry.getValue()).intValue();

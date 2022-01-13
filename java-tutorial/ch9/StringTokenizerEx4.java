@@ -2,31 +2,31 @@ import java.util.*;
 
 class StringTokenizerEx4 { 
 	public static void main(String args[]) { 
-		String input = "»ï½Ê¸¸»ïÃµ¹é½Ê¿À"; 
+		String input = "ì‚¼ì‹­ë§Œì‚¼ì²œë°±ì‹­ì˜¤"; 
 
 		System.out.println(input); 
 		System.out.println(hangulToNum(input)); 
 	} 
 
-	// ÇÑ±ÛÀ» ¼ıÀÚ·Î ¹Ù²Ù´Â ¸Ş¼­µå
+	// í•œê¸€ì„ ìˆ«ìë¡œ ë°”ê¾¸ëŠ” ë©”ì„œë“œ
 	public static long hangulToNum(String input) { 
-		long result = 0;     // ÃÖÁ¾ º¯È¯°á°ú¸¦ ÀúÀåÇÏ±â À§ÇÑ º¯¼ö 
-		long tmpResult = 0;  // ½Ê¹éÃµ ´ÜÀ§ÀÇ °ªÀ» ÀúÀåÇÏ±â À§ÇÑ ÀÓ½Ãº¯¼ö
+		long result = 0;     // ìµœì¢… ë³€í™˜ê²°ê³¼ë¥¼ ì €ì¥í•˜ê¸° ìœ„í•œ ë³€ìˆ˜ 
+		long tmpResult = 0;  // ì‹­ë°±ì²œ ë‹¨ìœ„ì˜ ê°’ì„ ì €ì¥í•˜ê¸° ìœ„í•œ ì„ì‹œë³€ìˆ˜
 		long num = 0; 
 
-		final String NUMBER = "¿µÀÏÀÌ»ï»ç¿ÀÀ°Ä¥ÆÈ±¸"; 
-		final String UNIT   = "½Ê¹éÃµ¸¸¾ïÁ¶"; 
+		final String NUMBER = "ì˜ì¼ì´ì‚¼ì‚¬ì˜¤ìœ¡ì¹ íŒ”êµ¬"; 
+		final String UNIT   = "ì‹­ë°±ì²œë§Œì–µì¡°"; 
 		final long[] UNIT_NUM  = {10,100,1000,10000,(long)1e8,(long)1e12}; 
 
 		StringTokenizer st = new StringTokenizer(input, UNIT, true); 
 
 		while(st.hasMoreTokens()) { 
 			String token = st.nextToken(); 
-                   // ¼ıÀÚÀÎÁö, ´ÜÀ§(UNIT)ÀÎÁö È®ÀÎÇÑ´Ù.
+                   // ìˆ«ìì¸ì§€, ë‹¨ìœ„(UNIT)ì¸ì§€ í™•ì¸í•œë‹¤.
 			int check = NUMBER.indexOf(token);	
 
-			if(check==-1) { // ´ÜÀ§ÀÎ °æ¿ì
-				if("¸¸¾ïÁ¶".indexOf(token)==-1) { 
+			if(check==-1) { // ë‹¨ìœ„ì¸ ê²½ìš°
+				if("ë§Œì–µì¡°".indexOf(token)==-1) { 
 					tmpResult += ( num!=0 ? num : 1) * UNIT_NUM[UNIT.indexOf(token)]; 
 				} else {	
 					tmpResult += num; 
@@ -34,7 +34,7 @@ class StringTokenizerEx4 {
 					tmpResult = 0; 
 				} 
 				num = 0; 
-			} else {  // ¼ıÀÚÀÎ °æ¿ì
+			} else {  // ìˆ«ìì¸ ê²½ìš°
 				num = check; 
 			} 
 		} // end of while 

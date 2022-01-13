@@ -3,15 +3,15 @@ import java.text.*;
 
 class DateFormatEx2 {
 	public static void main(String[] args) {
-		// Calendar¿Í Date°£ÀÇ º¯È¯Àº ´ÙÀ½°ú °°ÀÌ ÇÑ´Ù.
+		// Calendarì™€ Dateê°„ì˜ ë³€í™˜ì€ ë‹¤ìŒê³¼ ê°™ì´ í•œë‹¤.
 		Calendar cal = Calendar.getInstance();
-		cal.set(2005, 9, 3);	// 2005³â 10¿ù 3ÀÏ - Month´Â 0~11ÀÇ ¹üÀ§¸¦ °®´Â´Ù.
+		cal.set(2005, 9, 3);	// 2005ë…„ 10ì›” 3ì¼ - MonthëŠ” 0~11ì˜ ë²”ìœ„ë¥¼ ê°–ëŠ”ë‹¤.
 
 		Date day = cal.getTime();
 
 		SimpleDateFormat sdf1, sdf2, sdf3, sdf4;
 		sdf1 = new SimpleDateFormat("yyyy-MM-dd");
-		sdf2 = new SimpleDateFormat("yy-MM-dd E¿äÀÏ");
+		sdf2 = new SimpleDateFormat("yy-MM-dd Eìš”ì¼");
 		sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 		sdf4 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
 

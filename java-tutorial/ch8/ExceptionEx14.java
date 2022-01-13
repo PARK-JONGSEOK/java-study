@@ -3,12 +3,12 @@ class ExceptionEx14 {
 		try  {
 				method1();		
 		} catch (Exception e)	{
-				System.out.println("main¸Ş¼­µå¿¡¼­ ¿¹¿Ü°¡ Ã³¸®µÇ¾ú½À´Ï´Ù.");
+				System.out.println("mainë©”ì„œë“œì—ì„œ ì˜ˆì™¸ê°€ ì²˜ë¦¬ë˜ì—ˆìŠµë‹ˆë‹¤.");
 				e.printStackTrace();
 		}
-	}	// main¸Ş¼­µåÀÇ ³¡
+	}	// mainë©”ì„œë“œì˜ ë
 
 	static void method1() throws Exception {
 		throw new Exception();
-	}	// method1()ÀÇ ³¡
-} // classÀÇ ³¡
+	}	// method1()ì˜ ë
+} // classì˜ ë

@@ -5,27 +5,27 @@ import static java.util.stream.Collectors.*;
 class StreamEx6 {
 	public static void main(String[] args) {
 		Student[] stuArr = {
-			new Student("ÀÌÀÚ¹Ù", 3, 300),
-			new Student("±èÀÚ¹Ù", 1, 200),
-			new Student("¾ÈÀÚ¹Ù", 2, 100),
-			new Student("¹ÚÀÚ¹Ù", 2, 150),
-			new Student("¼ÒÀÚ¹Ù", 1, 200),
-			new Student("³ªÀÚ¹Ù", 3, 290),
-			new Student("°¨ÀÚ¹Ù", 3, 180)	
+			new Student("ì´ìë°”", 3, 300),
+			new Student("ê¹€ìë°”", 1, 200),
+			new Student("ì•ˆìë°”", 2, 100),
+			new Student("ë°•ìë°”", 2, 150),
+			new Student("ì†Œìë°”", 1, 200),
+			new Student("ë‚˜ìë°”", 3, 290),
+			new Student("ê°ìë°”", 3, 180)	
 		};
 
-		// ÇĞ»ı ÀÌ¸§¸¸ »Ì¾Æ¼­ List<String>¿¡ ÀúÀå
+		// í•™ìƒ ì´ë¦„ë§Œ ë½‘ì•„ì„œ List<String>ì— ì €ì¥
 		List<String> names = Stream.of(stuArr).map(Student::getName)
 									          .collect(Collectors.toList());
 		System.out.println(names);
 
-		// ½ºÆ®¸²À» ¹è¿­·Î º¯È¯
+		// ìŠ¤íŠ¸ë¦¼ì„ ë°°ì—´ë¡œ ë³€í™˜
 		Student[] stuArr2 = Stream.of(stuArr).toArray(Student[]::new);
 
 		for(Student s : stuArr2)
 			System.out.println(s);
 
-		// ½ºÆ®¸²À» Map<String, Student>·Î º¯È¯. ÇĞ»ı ÀÌ¸§ÀÌ key 
+		// ìŠ¤íŠ¸ë¦¼ì„ Map<String, Student>ë¡œ ë³€í™˜. í•™ìƒ ì´ë¦„ì´ key 
 		Map<String,Student> stuMap = Stream.of(stuArr)
 						                   .collect(Collectors.toMap(s->s.getName(), p->p));
 		for(String name : stuMap.keySet())

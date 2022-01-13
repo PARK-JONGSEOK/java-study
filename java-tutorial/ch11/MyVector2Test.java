@@ -9,13 +9,13 @@ class MyVector2Test {
 		v.add("3");
 		v.add("4");
 
-		System.out.println("»èÁ¦ Àü : " + v);
+		System.out.println("ì‚­ì œ ì „ : " + v);
 		Iterator it = v.iterator();
 		it.next();
 		it.remove();
 		it.next();
 		it.remove();
 
-		System.out.println("»èÁ¦ ÈÄ : " + v);
+		System.out.println("ì‚­ì œ í›„ : " + v);
 	}
 }

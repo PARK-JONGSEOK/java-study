@@ -1,4 +1,4 @@
-import java.util.regex.*;	// Pattern°ú Matcher°¡ ¼ÓÇÑ ÆĞÅ°Áö
+import java.util.regex.*;	// Patternê³¼ Matcherê°€ ì†í•œ íŒ¨í‚¤ì§€
 
 class RegularEx4 {
 	public static void main(String[] args) {
@@ -14,9 +14,9 @@ class RegularEx4 {
 		int i=0;
 
 		while(m.find()) {
-			System.out.println(++i + "¹øÂ° ¸ÅÄª:" + m.start() + "~"+ m.end());
+			System.out.println(++i + "ë²ˆì§¸ ë§¤ì¹­:" + m.start() + "~"+ m.end());
 
-            // brokenÀ» drunkenÀ¸·Î Ä¡È¯ÇÏ¿© sb¿¡ ÀúÀåÇÑ´Ù.
+            // brokenì„ drunkenìœ¼ë¡œ ì¹˜í™˜í•˜ì—¬ sbì— ì €ì¥í•œë‹¤.
 			m.appendReplacement(sb, "drunken");  
 		}
 

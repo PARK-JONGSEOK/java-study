@@ -7,7 +7,7 @@ class ExceptionEx4 {
 				System.out.println(4);
 			} catch (Exception e)	{
 				System.out.println(5);
-			} // try-catchÀÇ ³¡
+			} // try-catchì˜ ë
 			System.out.println(6);
-	}	// main¸Ş¼­µåÀÇ ³¡
+	}	// mainë©”ì„œë“œì˜ ë
 }

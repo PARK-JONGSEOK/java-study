@@ -22,8 +22,8 @@ class OptionalEx1 {
 		Optional.of("456").map(Integer::parseInt)
 					      .ifPresent(x->System.out.printf("result3=%d%n",x));
 
-		OptionalInt optInt1  = OptionalInt.of(0);   // 0¿ª ¿˙¿Â
-		OptionalInt optInt2  = OptionalInt.empty(); // ∫Û ∞¥√º∏¶ ª˝º∫
+		OptionalInt optInt1  = OptionalInt.of(0);   // 0ÏùÑ Ï†ÄÏû•
+		OptionalInt optInt2  = OptionalInt.empty(); // Îπà Í∞ùÏ≤¥Î•º ÏÉùÏÑ±
 
 		System.out.println(optInt1.isPresent());   // true
 		System.out.println(optInt2.isPresent());   // false
@@ -34,8 +34,8 @@ class OptionalEx1 {
 		System.out.println("optInt2="+optInt2);
 	     	System.out.println("optInt1.equals(optInt2)?"+optInt1.equals(optInt2));
 	
-		Optional<String> opt  = Optional.ofNullable(null); // null¿ª ¿˙¿Â
-		Optional<String> opt2 = Optional.empty();          // ∫Û ∞¥√º∏¶ ª˝º∫
+		Optional<String> opt  = Optional.ofNullable(null); // nullÏùÑ Ï†ÄÏû•
+		Optional<String> opt2 = Optional.empty();          // Îπà Í∞ùÏ≤¥Î•º ÏÉùÏÑ±
 		System.out.println("opt ="+opt);
 		System.out.println("opt2="+opt2);
 		System.out.println("opt.equals(opt2)?"+opt.equals(opt2)); // true

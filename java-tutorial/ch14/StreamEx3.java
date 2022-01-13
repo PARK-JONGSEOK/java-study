@@ -4,13 +4,13 @@ import java.util.stream.*;
 class StreamEx3 {
 	public static void main(String[] args) {
 		Student[] stuArr = {
-			new Student("ÀÌÀÚ¹Ù", 3, 300),
-			new Student("±èÀÚ¹Ù", 1, 200),
-			new Student("¾ÈÀÚ¹Ù", 2, 100),
-			new Student("¹ÚÀÚ¹Ù", 2, 150),
-			new Student("¼ÒÀÚ¹Ù", 1, 200),
-			new Student("³ªÀÚ¹Ù", 3, 290),
-			new Student("°¨ÀÚ¹Ù", 3, 180)	
+			new Student("ì´ìë°”", 3, 300),
+			new Student("ê¹€ìë°”", 1, 200),
+			new Student("ì•ˆìë°”", 2, 100),
+			new Student("ë°•ìë°”", 2, 150),
+			new Student("ì†Œìë°”", 1, 200),
+			new Student("ë‚˜ìë°”", 3, 290),
+			new Student("ê°ìë°”", 3, 180)	
 		};
 
 		Stream<Student> stuStream = Stream.of(stuArr);
@@ -19,7 +19,7 @@ class StreamEx3 {
 				 .thenComparing(Comparator.naturalOrder()))
 				 .forEach(System.out::println);
 
-		stuStream = Stream.of(stuArr); // ½ºÆ®¸²À» ´Ù½Ã »ı¼ºÇÑ´Ù. 
+		stuStream = Stream.of(stuArr); // ìŠ¤íŠ¸ë¦¼ì„ ë‹¤ì‹œ ìƒì„±í•œë‹¤. 
 	     IntStream stuScoreStream= stuStream.mapToInt(Student::getTotalScore);
 
 		IntSummaryStatistics stat = stuScoreStream.summaryStatistics();

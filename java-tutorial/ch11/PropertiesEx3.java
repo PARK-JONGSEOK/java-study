@@ -6,7 +6,7 @@ class PropertiesEx3 {
 		Properties prop = new Properties();
 
 		prop.setProperty("timeout","30");
-		prop.setProperty("language","ÇÑ±Û");
+		prop.setProperty("language","í•œê¸€");
 		prop.setProperty("size","10");
 		prop.setProperty("capacity","10");
 
@@ -16,5 +16,5 @@ class PropertiesEx3 {
 		} catch(IOException e) {
 			e.printStackTrace();		
 		}
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 }

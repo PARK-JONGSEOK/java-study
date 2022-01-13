@@ -1,8 +1,8 @@
-import java.util.*;  // Arrays.toString()À» »ç¿ëÇÏ±â À§ÇØ Ãß°¡
+import java.util.*;  // Arrays.toString()ì„ ì‚¬ìš©í•˜ê¸° ìœ„í•´ ì¶”ê°€
 
 class ArrayEx9 {
 	public static void main(String[] args) {
-		int[] code = { -4, -1, 3, 6, 11 };  // ºÒ¿¬¼ÓÀûÀÎ °ªµé·Î ±¸¼ºµÈ ¹è¿­
+		int[] code = { -4, -1, 3, 6, 11 };  // ë¶ˆì—°ì†ì ì¸ ê°’ë“¤ë¡œ êµ¬ì„±ëœ ë°°ì—´
 		int[] arr = new int[10];
 
 		for (int i=0; i < arr.length ; i++ ) {
@@ -11,5 +11,5 @@ class ArrayEx9 {
 		}
 
 		System.out.println(Arrays.toString(arr));
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 }

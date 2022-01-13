@@ -2,13 +2,13 @@ import java.util.*;
 
 class VectorEx1 {
 	public static void main(String[] args) {
-		Vector v = new Vector(5);	// ¿ë·®(capacity)ÀÌ 5ÀÎ Vector¸¦ »ı¼ºÇÑ´Ù.
+		Vector v = new Vector(5);	// ìš©ëŸ‰(capacity)ì´ 5ì¸ Vectorë¥¼ ìƒì„±í•œë‹¤.
 		v.add("1");
 		v.add("2");
 		v.add("3");
 		print(v);
 
-		v.trimToSize();	// ºó °ø°£À» ¾ø¾Ø´Ù.(¿ë·®°ú Å©±â°¡ °°¾ÆÁø´Ù.)
+		v.trimToSize();	// ë¹ˆ ê³µê°„ì„ ì—†ì•¤ë‹¤.(ìš©ëŸ‰ê³¼ í¬ê¸°ê°€ ê°™ì•„ì§„ë‹¤.)
 		System.out.println("=== After trimToSize() ===");
 		print(v);
 

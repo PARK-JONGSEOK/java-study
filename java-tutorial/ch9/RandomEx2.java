@@ -8,7 +8,7 @@ class RandomEx2 {
 
 		for (int i=0; i < number.length ; i++ ) { 
 //			System.out.print(number[i] = (int)(Math.random() * 10)); 
-//                  0<=x<10 ¹üÀ§ÀÇ Á¤¼ö x¸¦ ¹ÝÈ¯ÇÑ´Ù.
+//                  0<=x<10 ë²”ìœ„ì˜ ì •ìˆ˜ xë¥¼ ë°˜í™˜í•œë‹¤.
 			System.out.print(number[i] = rand.nextInt(10));	  
 		} 
 		System.out.println(); 
@@ -18,7 +18,7 @@ class RandomEx2 {
 		} 
 
 		for (int i=0; i < counter.length ; i++ ) { 
-			System.out.println( i +"ÀÇ °³¼ö :"+ printGraph('#',counter[i]) + " " + counter[i]); 
+			System.out.println( i +"ì˜ ê°œìˆ˜ :"+ printGraph('#',counter[i]) + " " + counter[i]); 
 		} 
 	} 
 

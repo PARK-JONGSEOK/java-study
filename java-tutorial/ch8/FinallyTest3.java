@@ -1,18 +1,18 @@
 class FinallyTest3 {
 	public static void main(String args[]) {
-		// method1()Àº static¸Ş¼­µåÀÌ¹Ç·Î ÀÎ½ºÅÏ½º »ı¼º¾øÀÌ Á÷Á¢ È£ÃâÀÌ °¡´ÉÇÏ´Ù.
+		// method1()ì€ staticë©”ì„œë“œì´ë¯€ë¡œ ì¸ìŠ¤í„´ìŠ¤ ìƒì„±ì—†ì´ ì§ì ‘ í˜¸ì¶œì´ ê°€ëŠ¥í•˜ë‹¤.
 		FinallyTest3.method1();		
-        System.out.println("method1()ÀÇ ¼öÇàÀ» ¸¶Ä¡°í main¸Ş¼­µå·Î µ¹¾Æ¿Ô½À´Ï´Ù.");
-	}	// main¸Ş¼­µåÀÇ ³¡
+        System.out.println("method1()ì˜ ìˆ˜í–‰ì„ ë§ˆì¹˜ê³  mainë©”ì„œë“œë¡œ ëŒì•„ì™”ìŠµë‹ˆë‹¤.");
+	}	// mainë©”ì„œë“œì˜ ë
 
 	static void method1() {
 		try {
-			System.out.println("method1()ÀÌ È£ÃâµÇ¾ú½À´Ï´Ù.");
-			return;		// ÇöÀç ½ÇÇà ÁßÀÎ ¸Ş¼­µå¸¦ Á¾·áÇÑ´Ù.
+			System.out.println("method1()ì´ í˜¸ì¶œë˜ì—ˆìŠµë‹ˆë‹¤.");
+			return;		// í˜„ì¬ ì‹¤í–‰ ì¤‘ì¸ ë©”ì„œë“œë¥¼ ì¢…ë£Œí•œë‹¤.
 		}	catch (Exception e)	{
 			e.printStackTrace();
 		} finally {
-			System.out.println("method1()ÀÇ finallyºí·°ÀÌ ½ÇÇàµÇ¾ú½À´Ï´Ù.");
+			System.out.println("method1()ì˜ finallyë¸”ëŸ­ì´ ì‹¤í–‰ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
-	}	// method1¸Ş¼­µåÀÇ ³¡
+	}	// method1ë©”ì„œë“œì˜ ë
 }

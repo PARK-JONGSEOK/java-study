@@ -20,14 +20,14 @@ class EqualsEx2 {
 		Person p2 = new Person(8011081111222L);
 
 		if(p1==p2)
-			System.out.println("p1°ú p2´Â °°Àº »ç¶÷ÀÔ´Ï´Ù.");
+			System.out.println("p1ê³¼ p2ëŠ” ê°™ì€ ì‚¬ëŒì…ë‹ˆë‹¤.");
 		else
-			System.out.println("p1°ú p2´Â ´Ù¸¥ »ç¶÷ÀÔ´Ï´Ù.");
+			System.out.println("p1ê³¼ p2ëŠ” ë‹¤ë¥¸ ì‚¬ëŒì…ë‹ˆë‹¤.");
 
 		if(p1.equals(p2))
-			System.out.println("p1°ú p2´Â °°Àº »ç¶÷ÀÔ´Ï´Ù.");
+			System.out.println("p1ê³¼ p2ëŠ” ê°™ì€ ì‚¬ëŒì…ë‹ˆë‹¤.");
 		else
-			System.out.println("p1°ú p2´Â ´Ù¸¥ »ç¶÷ÀÔ´Ï´Ù.");
+			System.out.println("p1ê³¼ p2ëŠ” ë‹¤ë¥¸ ì‚¬ëŒì…ë‹ˆë‹¤.");
 	
 	}
 }

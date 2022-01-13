@@ -7,12 +7,12 @@
 		// ThreadGroup(ThreadGroup parent, String name) 
 		ThreadGroup subGrp1 = new ThreadGroup(grp1,"SubGroup1"); 
 
-		grp1.setMaxPriority(3);	// ¾²·¹µå ±×·ì grp1ÀÇ ÃÖ´ë¿ì¼±¼øÀ§¸¦ 3À¸·Î º¯°æ.
+		grp1.setMaxPriority(3);	// ì“°ë ˆë“œ ê·¸ë£¹ grp1ì˜ ìµœëŒ€ìš°ì„ ìˆœìœ„ë¥¼ 3ìœ¼ë¡œ ë³€ê²½.
 		
 		Runnable r = new Runnable() {
 			public void run() {
 				try { 
-					Thread.sleep(1000); // ¾²·¹µå¸¦ 1ÃÊ°£ ¸ØÃß°Ô ÇÑ´Ù.
+					Thread.sleep(1000); // ì“°ë ˆë“œë¥¼ 1ì´ˆê°„ ë©ˆì¶”ê²Œ í•œë‹¤.
 				} catch(InterruptedException e) {}
 			}	
 		};

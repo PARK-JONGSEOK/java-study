@@ -3,10 +3,10 @@ import java.time.temporal.*;
 
 class NewTimeEx2 {
 	public static void main(String[] args) {
-		LocalDate date = LocalDate.of(2015, 12, 31); // 2015³â 12¿ù 31ÀÏ
-		LocalTime time = LocalTime.of(12,34,56);     // 12½Ã 23ºĞ 56ÃÊ
+		LocalDate date = LocalDate.of(2015, 12, 31); // 2015ë…„ 12ì›” 31ì¼
+		LocalTime time = LocalTime.of(12,34,56);     // 12ì‹œ 23ë¶„ 56ì´ˆ
 
-		// 2015³â 12¿ù 31ÀÏ 12½Ã 23ºĞ 56ÃÊ
+		// 2015ë…„ 12ì›” 31ì¼ 12ì‹œ 23ë¶„ 56ì´ˆ
 		LocalDateTime dt  = LocalDateTime.of(date, time);
 	
 		ZoneId zid = ZoneId.of("Asia/Seoul");

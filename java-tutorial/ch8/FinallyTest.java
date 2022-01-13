@@ -1,18 +1,18 @@
 class FinallyTest {
 	public static void main(String args[]) {
 		try {
-			startInstall();		// ÇÁ·Î±×·¥ ¼³Ä¡¿¡ ÇÊ¿äÇÑ ÁØºñ¸¦ ÇÑ´Ù.
-			copyFiles();		// ÆÄÀÏµéÀ» º¹»çÇÑ´Ù. 
-			deleteTempFiles();	// ÇÁ·Î±×·¥ ¼³Ä¡¿¡ »ç¿ëµÈ ÀÓ½ÃÆÄÀÏµéÀ» »èÁ¦ÇÑ´Ù.
+			startInstall();		// í”„ë¡œê·¸ë¨ ì„¤ì¹˜ì— í•„ìš”í•œ ì¤€ë¹„ë¥¼ í•œë‹¤.
+			copyFiles();		// íŒŒì¼ë“¤ì„ ë³µì‚¬í•œë‹¤. 
+			deleteTempFiles();	// í”„ë¡œê·¸ë¨ ì„¤ì¹˜ì— ì‚¬ìš©ëœ ì„ì‹œíŒŒì¼ë“¤ì„ ì‚­ì œí•œë‹¤.
 		} catch (Exception e) {
 			e.printStackTrace();
-		    	deleteTempFiles();   // ÇÁ·Î±×·¥ ¼³Ä¡¿¡ »ç¿ëµÈ ÀÓ½ÃÆÄÀÏµéÀ» »èÁ¦ÇÑ´Ù.
-		} // try-catchÀÇ ³¡
-	} // mainÀÇ ³¡
+		    	deleteTempFiles();   // í”„ë¡œê·¸ë¨ ì„¤ì¹˜ì— ì‚¬ìš©ëœ ì„ì‹œíŒŒì¼ë“¤ì„ ì‚­ì œí•œë‹¤.
+		} // try-catchì˜ ë
+	} // mainì˜ ë
 
    static void startInstall() { 
-        /* ÇÁ·Î±×·¥ ¼³Ä¡¿¡ ÇÊ¿äÇÑ ÁØºñ¸¦ ÇÏ´Â ÄÚµå¸¦ Àû´Â´Ù.*/ 
+        /* í”„ë¡œê·¸ë¨ ì„¤ì¹˜ì— í•„ìš”í•œ ì¤€ë¹„ë¥¼ í•˜ëŠ” ì½”ë“œë¥¼ ì ëŠ”ë‹¤.*/ 
    }
-   static void copyFiles() { /* ÆÄÀÏµéÀ» º¹»çÇÏ´Â ÄÚµå¸¦ Àû´Â´Ù. */ }
-   static void deleteTempFiles() { /* ÀÓ½ÃÆÄÀÏµéÀ» »èÁ¦ÇÏ´Â ÄÚµå¸¦ Àû´Â´Ù.*/ }
+   static void copyFiles() { /* íŒŒì¼ë“¤ì„ ë³µì‚¬í•˜ëŠ” ì½”ë“œë¥¼ ì ëŠ”ë‹¤. */ }
+   static void deleteTempFiles() { /* ì„ì‹œíŒŒì¼ë“¤ì„ ì‚­ì œí•˜ëŠ” ì½”ë“œë¥¼ ì ëŠ”ë‹¤.*/ }
 }

@@ -8,5 +8,5 @@ class StringTokenizerEx2 {
 		while(st.hasMoreTokens()){
 			System.out.println(st.nextToken());
 		}
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 } 

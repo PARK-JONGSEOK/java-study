@@ -4,17 +4,17 @@ class EqualsEx1 {
 		Value v2 = new Value(10);		
 
 		if (v1.equals(v2)) {
-			System.out.println("v1°ú v2´Â °°½À´Ï´Ù.");
+			System.out.println("v1ê³¼ v2ëŠ” ê°™ìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println("v1°ú v2´Â ´Ù¸¨´Ï´Ù.");		
+			System.out.println("v1ê³¼ v2ëŠ” ë‹¤ë¦…ë‹ˆë‹¤.");		
 		}
 
 		v2 = v1;
 
 		if (v1.equals(v2)) {
-			System.out.println("v1°ú v2´Â °°½À´Ï´Ù.");
+			System.out.println("v1ê³¼ v2ëŠ” ê°™ìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println("v1°ú v2´Â ´Ù¸¨´Ï´Ù.");		
+			System.out.println("v1ê³¼ v2ëŠ” ë‹¤ë¦…ë‹ˆë‹¤.");		
 		}
 	} // main
 } 

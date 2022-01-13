@@ -31,7 +31,7 @@ abstract class MyTransportation extends MyEnum {
 		int fare(int distance) { return distance * BASIC_FARE; }
 	};
 
-	abstract int fare(int distance); // Ãß»ó ¸Ş¼­µå
+	abstract int fare(int distance); // ì¶”ìƒ ë©”ì„œë“œ
 
 	protected final int BASIC_FARE;
 

@@ -1,5 +1,5 @@
 import java.util.*;
-import static java.util.Objects.*;  // ObjectsÅ¬·¡½ºÀÇ ¸Ş¼­µå¸¦ static import
+import static java.util.Objects.*;  // Objectsí´ë˜ìŠ¤ì˜ ë©”ì„œë“œë¥¼ static import
 
 class ObjectsTest {
 	public static void main(String[] args) {

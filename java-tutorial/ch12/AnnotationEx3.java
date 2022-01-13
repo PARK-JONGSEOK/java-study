@@ -18,15 +18,15 @@ class NewClass{
 
 
 class AnnotationEx3 {
-	@SuppressWarnings("deprecation")     // deprecation°ü·Ã °æ°í¸¦ ¾ïÁ¦
+	@SuppressWarnings("deprecation")     // deprecationê´€ë ¨ ê²½ê³ ë¥¼ ì–µì œ
 	public static void main(String args[]) {
 		NewClass nc = new NewClass();
 
-		nc.oldField = 10;                     //@Depreacted°¡ ºÙÀº ´ë»óÀ» »ç¿ë
-		System.out.println(nc.getOldField()); //@Depreacted°¡ ºÙÀº ´ë»óÀ» »ç¿ë
+		nc.oldField = 10;                     //@Depreactedê°€ ë¶™ì€ ëŒ€ìƒì„ ì‚¬ìš©
+		System.out.println(nc.getOldField()); //@Depreactedê°€ ë¶™ì€ ëŒ€ìƒì„ ì‚¬ìš©
 
-		@SuppressWarnings("unchecked")               // Áö³×¸¯½º °ü·Ã °æ°í¸¦ ¾ïÁ¦
-		ArrayList<NewClass> list = new ArrayList();  // Å¸ÀÔÀ» ÁöÁ¤ÇÏÁö ¾ÊÀ½.
+		@SuppressWarnings("unchecked")               // ì§€ë„¤ë¦­ìŠ¤ ê´€ë ¨ ê²½ê³ ë¥¼ ì–µì œ
+		ArrayList<NewClass> list = new ArrayList();  // íƒ€ì…ì„ ì§€ì •í•˜ì§€ ì•ŠìŒ.
 		list.add(nc);
 	}
 }

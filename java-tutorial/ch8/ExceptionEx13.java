@@ -1,14 +1,14 @@
 class ExceptionEx13 {
 	public static void main(String[] args) {
-		method1(); 	  // °°Àº Å¬·¡½º³»ÀÇ static¸â¹öÀÌ¹Ç·Î °´Ã¼»ı¼º¾øÀÌ Á÷Á¢ È£Ãâ°¡´É.
-  	}	// main¸Ş¼­µåÀÇ ³¡
+		method1(); 	  // ê°™ì€ í´ë˜ìŠ¤ë‚´ì˜ staticë©¤ë²„ì´ë¯€ë¡œ ê°ì²´ìƒì„±ì—†ì´ ì§ì ‘ í˜¸ì¶œê°€ëŠ¥.
+  	}	// mainë©”ì„œë“œì˜ ë
 
 	static void method1() {
 		try {
 		     throw new Exception();
 		} catch (Exception e) {
-			System.out.println("method1¸Ş¼­µå¿¡¼­ ¿¹¿Ü°¡ Ã³¸®µÇ¾ú½À´Ï´Ù.");
+			System.out.println("method1ë©”ì„œë“œì—ì„œ ì˜ˆì™¸ê°€ ì²˜ë¦¬ë˜ì—ˆìŠµë‹ˆë‹¤.");
 			e.printStackTrace();
 		}
-	}	// method1ÀÇ ³¡
+	}	// method1ì˜ ë
 }

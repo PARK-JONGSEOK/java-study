@@ -1,10 +1,10 @@
 class StringEx6 {
 	public static void main(String[] args) {
 		int iVal = 100;
-		String strVal = String.valueOf(iVal);	// int¸¦ StringÀ¸·Î º¯È¯ÇÑ´Ù.
+		String strVal = String.valueOf(iVal);	// intë¥¼ Stringìœ¼ë¡œ ë³€í™˜í•œë‹¤.
 		
 		double dVal = 200.0;
-		String strVal2 = dVal + "";	// int¸¦ StringÀ¸·Î º¯È¯ÇÏ´Â ¶Ç ´Ù¸¥ ¹æ¹ı
+		String strVal2 = dVal + "";	// intë¥¼ Stringìœ¼ë¡œ ë³€í™˜í•˜ëŠ” ë˜ ë‹¤ë¥¸ ë°©ë²•
 
 		double sum  = Integer.parseInt("+"+strVal)+Double.parseDouble(strVal2);
 		double sum2 = Integer.valueOf(strVal) + Double.valueOf(strVal2);

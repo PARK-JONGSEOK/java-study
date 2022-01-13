@@ -18,5 +18,5 @@ class DateFormatterEx2 {
 		System.out.println(time);
 		System.out.println(dateTime);
 		System.out.println(endOfYear);
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 }

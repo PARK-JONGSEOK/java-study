@@ -10,28 +10,28 @@ class CalendarEx7 {
             int year  = Integer.parseInt(args[0]); 
             int month = Integer.parseInt(args[1]); 
 
-            Calendar sDay = Calendar.getInstance();       // ½ÃÀÛÀÏ 
-            Calendar eDay = Calendar.getInstance();       // ³¡ÀÏ 
+            Calendar sDay = Calendar.getInstance();       // ì‹œì‘ì¼ 
+            Calendar eDay = Calendar.getInstance();       // ëì¼ 
 
-            // ¿ùÀÇ °æ¿ì 0 ºÎÅÍ 11±îÁöÀÇ °ªÀ» °¡Áö¹Ç·Î 1À» »©Áà¾ßÇÑ´Ù. 
-            // ¿¹¸¦ µé¾î, 2004³â 11¿ù 1ÀÏÀº sDay.set(2004, 10, 1);°ú °°ÀÌ ÇØÁà¾ß ÇÑ´Ù. 
-            sDay.set(year, month-1, 1);     // ÀÔ·Â¿ùÀÇ 1ÀÏ·Î ¼³Á¤ÇÑ´Ù.
-            // ÀÔ·Â¿ùÀÇ ¸»ÀÏ·Î ¼³Á¤ÇÑ´Ù.
+            // ì›”ì˜ ê²½ìš° 0 ë¶€í„° 11ê¹Œì§€ì˜ ê°’ì„ ê°€ì§€ë¯€ë¡œ 1ì„ ë¹¼ì¤˜ì•¼í•œë‹¤. 
+            // ì˜ˆë¥¼ ë“¤ì–´, 2004ë…„ 11ì›” 1ì¼ì€ sDay.set(2004, 10, 1);ê³¼ ê°™ì´ í•´ì¤˜ì•¼ í•œë‹¤. 
+            sDay.set(year, month-1, 1);     // ì…ë ¥ì›”ì˜ 1ì¼ë¡œ ì„¤ì •í•œë‹¤.
+            // ì…ë ¥ì›”ì˜ ë§ì¼ë¡œ ì„¤ì •í•œë‹¤.
 	        eDay.set(year, month-1,  sDay.getActualMaximum(Calendar.DATE));	
-            // 1ÀÏÀÌ ¼ÓÇÑ ÁÖÀÇ ÀÏ¿äÀÏ·Î ³¯Â¥¼³Á¤.
+            // 1ì¼ì´ ì†í•œ ì£¼ì˜ ì¼ìš”ì¼ë¡œ ë‚ ì§œì„¤ì •.
             sDay.add(Calendar.DATE, -sDay.get(Calendar.DAY_OF_WEEK) + 1);
-            // ¸»ÀÏÀÌ ¼ÓÇÑ ÁÖÀÇ Åä¿äÀÏ·Î ³¯Â¥¼³Á¤	
+            // ë§ì¼ì´ ì†í•œ ì£¼ì˜ í† ìš”ì¼ë¡œ ë‚ ì§œì„¤ì •	
             eDay.add(Calendar.DATE, 7 - eDay.get(Calendar.DAY_OF_WEEK));	
 
-            System.out.println("      " + year +"³â " + month +"¿ù"); 
+            System.out.println("      " + year +"ë…„ " + month +"ì›”"); 
             System.out.println(" SU MO TU WE TH FR SA"); 
      
-			//½ÃÀÛ ÀÏºÎÅÍ ¸¶Áö¸· ÀÏ±îÁö(sDay <= eDay) 1ÀÏ¾¿ Áõ°¡½ÃÅ°¸é¼­ ÀÏ(Calendar.DATE)À» Ãâ·Â
+			//ì‹œì‘ ì¼ë¶€í„° ë§ˆì§€ë§‰ ì¼ê¹Œì§€(sDay <= eDay) 1ì¼ì”© ì¦ê°€ì‹œí‚¤ë©´ì„œ ì¼(Calendar.DATE)ì„ ì¶œë ¥
 			for(int n=1; sDay.before(eDay) || sDay.equals(eDay); sDay.add(Calendar.DATE, 1)) {
 				int day = sDay.get(Calendar.DATE);
                 System.out.print((day < 10)? "  "+day : " "+day ); 
 
-				if(n++%7==0) System.out.println();	// 7ÀÏÄ¡¸¦ Âï°í ³ª¼­ ÁÙÀ» ¹Ù²Û´Ù.
+				if(n++%7==0) System.out.println();	// 7ì¼ì¹˜ë¥¼ ì°ê³  ë‚˜ì„œ ì¤„ì„ ë°”ê¾¼ë‹¤.
             } 
       } // main
 } 

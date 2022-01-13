@@ -12,10 +12,10 @@ class MathEx2 {
 			out.printf("negateExact(%d)= %d%n",  10, negateExact(10));
 			out.printf("negateExact(%d)= %d%n", -10, negateExact(-10));
 
-			out.printf("negateExact(%d)= %d%n", i, negateExact(i)); // ¿¹¿Ü¹ß»ı
+			out.printf("negateExact(%d)= %d%n", i, negateExact(i)); // ì˜ˆì™¸ë°œìƒ
 		} catch(ArithmeticException e) {
-			// i¸¦ longÅ¸ÀÔÀ¸·Î Çüº¯È¯ ´ÙÀ½¿¡ negateExact(long a)¸¦ È£Ãâ
+			// ië¥¼ longíƒ€ì…ìœ¼ë¡œ í˜•ë³€í™˜ ë‹¤ìŒì— negateExact(long a)ë¥¼ í˜¸ì¶œ
 		     out.printf("negateExact(%d)= %d%n",(long)i,negateExact((long)i));
 		}
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 }

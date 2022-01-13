@@ -8,7 +8,7 @@ class BufferedReaderEx1 {
 
 			String line = "";
 			for(int i=1;(line = br.readLine())!=null;i++) { 
-				//  ";"¸¦ Æ÷ÇÔÇÑ ¶óÀÎÀ» Ãâ·ÂÇÑ´Ù.
+				//  ";"ë¥¼ í¬í•¨í•œ ë¼ì¸ì„ ì¶œë ¥í•œë‹¤.
 				if(line.indexOf(";")!=-1)	
 					System.out.println(i+":"+line);
 			}

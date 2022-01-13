@@ -3,11 +3,11 @@ class CalendarEx8 {
 		  String date1 = "201508";
 		  String date2 = "201405";
 		
-		  // ³â°ú ¿ùÀ» substringÀ¸·Î Àß¶ó¼­ Á¤¼ö·Î º¯È¯ÇÑ´Ù.
-		  // ³â¿¡ 12¸¦ °öÇØ¼­ ¿ù·Î º¯È¯ÇÑ ´ÙÀ½¿¡ »¬¼ÀÀ» ÇÏ¸é °³¿ùÂ÷¸¦ ±¸ÇÒ ¼ö ÀÖ´Ù.
+		  // ë…„ê³¼ ì›”ì„ substringìœ¼ë¡œ ì˜ë¼ì„œ ì •ìˆ˜ë¡œ ë³€í™˜í•œë‹¤.
+		  // ë…„ì— 12ë¥¼ ê³±í•´ì„œ ì›”ë¡œ ë³€í™˜í•œ ë‹¤ìŒì— ëº„ì…ˆì„ í•˜ë©´ ê°œì›”ì°¨ë¥¼ êµ¬í•  ìˆ˜ ìˆë‹¤.
 		  int month1 = Integer.parseInt(date1.substring(0,4))* 12 + Integer.parseInt(date1.substring(4));
 		  int month2 = Integer.parseInt(date2.substring(0,4))* 12 + Integer.parseInt(date2.substring(4));
 
-		  System.out.println(date1 +"°ú " + date2 + "ÀÇ Â÷ÀÌ´Â " + Math.abs(month1-month2) + "°³¿ù ÀÔ´Ï´Ù.");
+		  System.out.println(date1 +"ê³¼ " + date2 + "ì˜ ì°¨ì´ëŠ” " + Math.abs(month1-month2) + "ê°œì›” ì…ë‹ˆë‹¤.");
       } 
 } 

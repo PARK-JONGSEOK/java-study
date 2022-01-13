@@ -1,11 +1,11 @@
 import java.util.*;
 
 class RandomEx4 {
-	final static int RECORD_NUM = 10;	// »ı¼ºÇÒ ·¹ÄÚµåÀÇ ¼ö¸¦ Á¤ÇÑ´Ù.
+	final static int RECORD_NUM = 10;	// ìƒì„±í•  ë ˆì½”ë“œì˜ ìˆ˜ë¥¼ ì •í•œë‹¤.
 	final static String TABLE_NAME = "TEST_TABLE";
 	final static String[] CODE1 = {"010","011","017","018","019"};
-	final static String[] CODE2 = {"³²ÀÚ", "¿©ÀÚ"};
-	final static String[] CODE3 = {"10´ë","20´ë","30´ë","40´ë","50´ë"};
+	final static String[] CODE2 = {"ë‚¨ì", "ì—¬ì"};
+	final static String[] CODE3 = {"10ëŒ€","20ëŒ€","30ëŒ€","40ëŒ€","50ëŒ€"};
 
 	public static void main(String[] args) {
 		for(int i=0; i < RECORD_NUM; i++) {
@@ -14,13 +14,13 @@ class RandomEx4 {
 					+  " '" + getRandArr(CODE1) + "'"
 					+  ", '" + getRandArr(CODE2) + "'"
 					+  ", '" + getRandArr(CODE3) + "'"
-					+  ",  " + getRand(100, 200)	// 100~200 »çÀÌÀÇ °ªÀ» ¾ò´Â´Ù.
+					+  ",  " + getRand(100, 200)	// 100~200 ì‚¬ì´ì˜ ê°’ì„ ì–»ëŠ”ë‹¤.
 					+ "); ");
 		}
 	}
 
 	public static String getRandArr(String[] arr) {
-		return arr[getRand(arr.length-1)];	// ¹è¿­¿¡ ÀúÀåµÈ °ª Áß ÇÏ³ª¸¦ ¹İÈ¯ÇÑ´Ù.
+		return arr[getRand(arr.length-1)];	// ë°°ì—´ì— ì €ì¥ëœ ê°’ ì¤‘ í•˜ë‚˜ë¥¼ ë°˜í™˜í•œë‹¤.
 	}	
 
 	public static int getRand(int n) {

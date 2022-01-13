@@ -4,13 +4,13 @@ class ExceptionEx1 {
 		try  {
 			try	{	} catch (Exception e)	{ }
 		} catch (Exception e)	{
-			try	{	} catch (Exception e) { }	// ¿¡·¯. º¯¼ö e°¡ Áßº¹ ¼±¾ğµÇ¾ú´Ù.
-		} // try-catchÀÇ ³¡
+			try	{	} catch (Exception e) { }	// ì—ëŸ¬. ë³€ìˆ˜ eê°€ ì¤‘ë³µ ì„ ì–¸ë˜ì—ˆë‹¤.
+		} // try-catchì˜ ë
 
 		try  {
 
 		} catch (Exception e)	{
 
-		} // try-catchÀÇ ³¡
-	}	// main¸Ş¼­µåÀÇ ³¡
+		} // try-catchì˜ ë
+	}	// mainë©”ì„œë“œì˜ ë
 }

@@ -16,7 +16,7 @@ class ThreadEx11_1 extends Thread {
 
 	public void run() {
 		try {
-			sleep(5 * 1000);	// 5ÃÊ µ¿¾È ±â´Ù¸°´Ù.
+			sleep(5 * 1000);	// 5ì´ˆ ë™ì•ˆ ê¸°ë‹¤ë¦°ë‹¤.
 		} catch(InterruptedException e) {}
 	}
 }

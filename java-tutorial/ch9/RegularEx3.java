@@ -1,4 +1,4 @@
-import java.util.regex.*;	// Pattern°ú Matcher°¡ ¼ÓÇÑ ÆĞÅ°Áö
+import java.util.regex.*;	// Patternê³¼ Matcherê°€ ì†í•œ íŒ¨í‚¤ì§€
 
 class RegularEx3{
 	public static void main(String[] args) {
@@ -13,5 +13,5 @@ class RegularEx3{
 		while(m.find()) {
 			System.out.println( ++i + ": " + m.group() + " -> "+ m.group(1) +", "+ m.group(2)+", "+ m.group(3));		
 		}
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 }

@@ -4,7 +4,7 @@ class FileSplit {
 	public static void main(String[] args) {
 		if (args.length < 2) {
 			System.out.println("USAGE : java FileSplit filename SIZE_KB");
-			System.exit(0); // ÇÁ·Î±×·¥À» Á¾·áÇÑ´Ù.
+			System.exit(0); // í”„ë¡œê·¸ëž¨ì„ ì¢…ë£Œí•œë‹¤.
 		}
 
 		final int VOLUME = Integer.parseInt(args[1]) * 1000;

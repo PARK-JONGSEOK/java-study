@@ -14,19 +14,19 @@ public class IteratorEx2 {
 		while(it.hasNext())
 			copy1.add(it.next());
 
-		System.out.println("= Original¿¡¼­ copy1·Î º¹»ç(copy) =");		
+		System.out.println("= Originalì—ì„œ copy1ë¡œ ë³µì‚¬(copy) =");		
 		System.out.println("original:"+original);
 		System.out.println("copy1:"+copy1);
 		System.out.println();
 
-		it = original.iterator(); // Iterator´Â Àç»ç¿ëÀÌ ¾ÈµÇ¹Ç·Î, ´Ù½Ã ¾ò¾î¿Í¾ß ÇÑ´Ù.
+		it = original.iterator(); // IteratorëŠ” ì¬ì‚¬ìš©ì´ ì•ˆë˜ë¯€ë¡œ, ë‹¤ì‹œ ì–»ì–´ì™€ì•¼ í•œë‹¤.
 		
 		while(it.hasNext()){
 			copy2.add(it.next());
 			it.remove();
 		}
 		
-		System.out.println("= Original¿¡¼­ copy2·Î ÀÌµ¿(move) =");		
+		System.out.println("= Originalì—ì„œ copy2ë¡œ ì´ë™(move) =");		
 		System.out.println("original:"+original);
 		System.out.println("copy2:"+copy2);		
 	} // main

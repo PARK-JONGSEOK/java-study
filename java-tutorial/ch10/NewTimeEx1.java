@@ -3,11 +3,11 @@ import java.time.temporal.*;
 
 class NewTimeEx1 {
 	public static void main(String[] args) {
-		LocalDate today = LocalDate.now(); // ¿À´ÃÀÇ ³¯Â¥
-		LocalTime now  = LocalTime.now();  // ÇöÀç ½Ã°£
+		LocalDate today = LocalDate.now(); // ì˜¤ëŠ˜ì˜ ë‚ ì§œ
+		LocalTime now  = LocalTime.now();  // í˜„ì¬ ì‹œê°„
 
-		LocalDate birthDate = LocalDate.of(1999, 12, 31); // 1999³â 12¿ù 31ÀÏ
-		LocalTime birthTime = LocalTime.of(23, 59, 59);   // 23½Ã 59ºĞ 59ÃÊ	
+		LocalDate birthDate = LocalDate.of(1999, 12, 31); // 1999ë…„ 12ì›” 31ì¼
+		LocalTime birthTime = LocalTime.of(23, 59, 59);   // 23ì‹œ 59ë¶„ 59ì´ˆ	
 
 		System.out.println("today="+today);
 		System.out.println("now="+now);
@@ -20,7 +20,7 @@ class NewTimeEx1 {
 
 		// 23:59:59 -> 23:00
 		System.out.println(birthTime.truncatedTo(ChronoUnit.HOURS)); 			
-		// Æ¯Á¤ ChronoFieldÀÇ ¹üÀ§¸¦ ¾Ë¾Æ³»´Â ¹æ¹ı
+		// íŠ¹ì • ChronoFieldì˜ ë²”ìœ„ë¥¼ ì•Œì•„ë‚´ëŠ” ë°©ë²•
 		System.out.println(ChronoField.CLOCK_HOUR_OF_DAY.range()); // 1-24
 		System.out.println(ChronoField.HOUR_OF_DAY.range());       // 0-23
 	}

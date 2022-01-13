@@ -2,7 +2,7 @@ import java.io.*;
 
 class RandomAccessFileEx2 {
 	public static void main(String args[]) {
-//				      ¹øÈ£, ±¹¾î, ¿µ¾î, ¼öÇĞ					
+//				      ë²ˆí˜¸, êµ­ì–´, ì˜ì–´, ìˆ˜í•™					
 		int[] score = {	1, 100,  90,  90,
 					    2,  70,  90, 100,
 						3, 100, 100, 100, 
@@ -21,7 +21,7 @@ class RandomAccessFileEx2 {
 			     System.out.println(raf.readInt());
 		      }
 		} catch (EOFException eof) {
-		       // readInt()¸¦ È£ÃâÇßÀ» ¶§ ´õ ÀÌ»ó ÀĞÀ» ³»¿ëÀÌ ¾øÀ¸¸é EOFExceptionÀÌ ¹ß»ıÇÑ´Ù.
+		       // readInt()ë¥¼ í˜¸ì¶œí–ˆì„ ë•Œ ë” ì´ìƒ ì½ì„ ë‚´ìš©ì´ ì—†ìœ¼ë©´ EOFExceptionì´ ë°œìƒí•œë‹¤.
 		} catch (IOException e) {
 		       e.printStackTrace();		
 		}

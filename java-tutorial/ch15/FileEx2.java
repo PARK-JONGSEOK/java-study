@@ -10,7 +10,7 @@ class FileEx2 {
 		File f = new File(args[0]);
 
 		if(!f.exists() || !f.isDirectory()) {
-			System.out.println("À¯È¿ÇÏÁö ¾ÊÀº µğ·ºÅä¸®ÀÔ´Ï´Ù.");
+			System.out.println("ìœ íš¨í•˜ì§€ ì•Šì€ ë””ë ‰í† ë¦¬ì…ë‹ˆë‹¤.");
 			System.exit(0);
 		} 
 

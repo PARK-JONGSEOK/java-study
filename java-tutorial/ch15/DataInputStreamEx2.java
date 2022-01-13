@@ -18,7 +18,7 @@ class DataInputStreamEx2 {
 				sum += score;
 			}
 		} catch (EOFException e) {
-			System.out.println("Á¡¼öÀÇ ÃÑÇÕÀº " + sum +"ÀÔ´Ï´Ù.");
+			System.out.println("ì ìˆ˜ì˜ ì´í•©ì€ " + sum +"ì…ë‹ˆë‹¤.");
 		} catch (IOException ie) {
 			ie.printStackTrace();
 		} finally {

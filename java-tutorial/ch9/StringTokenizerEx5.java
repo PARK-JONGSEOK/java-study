@@ -10,12 +10,12 @@ class StringTokenizerEx5 {
 		for(int i=0; i < result.length;i++)
 			System.out.print(result[i]+"|");
 
-		System.out.println("°³¼ö:"+result.length);
+		System.out.println("ê°œìˆ˜:"+result.length);
 
 		int i=0;
 		for(;st.hasMoreTokens();i++)
 			System.out.print(st.nextToken()+"|");
 
-		System.out.println("°³¼ö:"+i);
+		System.out.println("ê°œìˆ˜:"+i);
 	} // main
 }

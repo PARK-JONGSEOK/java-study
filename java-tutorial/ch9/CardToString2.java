@@ -3,7 +3,7 @@ class Card {
 	int number;
 
 	Card() {
-		this("SPADE", 1);  // Card(String kind, int number)¸¦ È£Ãâ
+		this("SPADE", 1);  // Card(String kind, int number)ë¥¼ í˜¸ì¶œ
 	}
 
 	Card(String kind, int number) {
@@ -12,7 +12,7 @@ class Card {
 	}
 
 	public String toString() {
-		// CardÀÎ½ºÅÏ½ºÀÇ kind¿Í number¸¦ ¹®ÀÚ¿­·Î ¹İÈ¯ÇÑ´Ù.
+		// Cardì¸ìŠ¤í„´ìŠ¤ì˜ kindì™€ numberë¥¼ ë¬¸ìì—´ë¡œ ë°˜í™˜í•œë‹¤.
 		return "kind : " + kind + ", number : " + number;
 	}
 }

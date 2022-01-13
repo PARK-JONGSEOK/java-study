@@ -5,7 +5,7 @@ public class PipedReaderWriter {
 		InputThread   inThread = new InputThread("InputThread");
 		OutputThread outThread = new OutputThread("OutputThread");
 
-        //PipedReader¿Í PipedWriter¸¦ ¿¬°áÇÑ´Ù.
+        //PipedReaderì™€ PipedWriterë¥¼ ì—°ê²°í•œë‹¤.
 		inThread.connect(outThread.getOutput());	
 
 		inThread.start();

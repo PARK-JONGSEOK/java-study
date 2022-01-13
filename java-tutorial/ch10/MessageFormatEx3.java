@@ -3,8 +3,8 @@ import java.text.*;
 class MessageFormatEx3 {
 	public static void main(String[] args) throws Exception {
 		String[] data = {
-		  "INSERT INTO CUST_INFO VALUES ('¿Ã¿⁄πŸ','02-123-1234',27,'07-09');",
-		  "INSERT INTO CUST_INFO VALUES ('±Ë«¡∑Œ','032-333-1234',33,'10-07');" 
+		  "INSERT INTO CUST_INFO VALUES ('Ïù¥ÏûêÎ∞î','02-123-1234',27,'07-09');",
+		  "INSERT INTO CUST_INFO VALUES ('ÍπÄÌîÑÎ°ú','032-333-1234',33,'10-07');" 
 		};
 
 		String pattern = "INSERT INTO CUST_INFO VALUES ({0},{1},{2},{3});";

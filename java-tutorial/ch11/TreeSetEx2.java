@@ -8,7 +8,7 @@ class TreeSetEx2 {
 		for(int i=0; i < score.length; i++)
 			set.add(new Integer(score[i]));
 
-		System.out.println("50º¸´Ù ÀÛÀº °ª :"	+ set.headSet(new Integer(50)));
-		System.out.println("50º¸´Ù Å« °ª :"	+ set.tailSet(new Integer(50)));
+		System.out.println("50ë³´ë‹¤ ìž‘ì€ ê°’ :"	+ set.headSet(new Integer(50)));
+		System.out.println("50ë³´ë‹¤ í° ê°’ :"	+ set.tailSet(new Integer(50)));
 	}
 }

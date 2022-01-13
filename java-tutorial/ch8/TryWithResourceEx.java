@@ -2,7 +2,7 @@ class TryWithResourceEx {
 	public static void main(String args[]) {
 
 		try (CloseableResource cr = new CloseableResource()) {
-			cr.exceptionWork(false); // ¿¹¿Ü°¡ ¹ß»ıÇÏÁö ¾Ê´Â´Ù.
+			cr.exceptionWork(false); // ì˜ˆì™¸ê°€ ë°œìƒí•˜ì§€ ì•ŠëŠ”ë‹¤.
  		} catch(WorkException e) {
 			e.printStackTrace();
 		} catch(CloseException e) {
@@ -11,26 +11,26 @@ class TryWithResourceEx {
 		System.out.println();
 	
 		try (CloseableResource cr = new CloseableResource()) {
-			cr.exceptionWork(true); // ¿¹¿Ü°¡ ¹ß»ıÇÑ´Ù.
+			cr.exceptionWork(true); // ì˜ˆì™¸ê°€ ë°œìƒí•œë‹¤.
  		} catch(WorkException e) {
 			e.printStackTrace();
 		} catch(CloseException e) {
 			e.printStackTrace();
 		}	
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 }
 
 class CloseableResource implements AutoCloseable {
 	public void exceptionWork(boolean exception) throws WorkException {
-		System.out.println("exceptionWork("+exception+")°¡ È£ÃâµÊ");
+		System.out.println("exceptionWork("+exception+")ê°€ í˜¸ì¶œë¨");
 
 		if(exception)
-			throw new WorkException("WorkException¹ß»ı!!!");
+			throw new WorkException("WorkExceptionë°œìƒ!!!");
 	}
 
 	public void close() throws CloseException {
-		System.out.println("close()°¡ È£ÃâµÊ");
-		throw new CloseException("CloseException¹ß»ı!!!");
+		System.out.println("close()ê°€ í˜¸ì¶œë¨");
+		throw new CloseException("CloseExceptionë°œìƒ!!!");
 	}
 }
 

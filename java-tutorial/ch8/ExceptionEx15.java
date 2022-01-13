@@ -2,28 +2,28 @@ import java.io.*;
 
 class ExceptionEx15 {
 	public static void main(String[] args) {
-        // command line¿¡¼­ ÀÔ·Â¹ŞÀº °ªÀ» ÀÌ¸§À¸·Î °®´Â ÆÄÀÏÀ» »ı¼ºÇÑ´Ù.
+        // command lineì—ì„œ ì…ë ¥ë°›ì€ ê°’ì„ ì´ë¦„ìœ¼ë¡œ ê°–ëŠ” íŒŒì¼ì„ ìƒì„±í•œë‹¤.
 		File f = createFile(args[0]);	
-		System.out.println( f.getName() + " ÆÄÀÏÀÌ ¼º°øÀûÀ¸·Î »ı¼ºµÇ¾ú½À´Ï´Ù.");
-	} // main¸Ş¼­µåÀÇ ³¡
+		System.out.println( f.getName() + " íŒŒì¼ì´ ì„±ê³µì ìœ¼ë¡œ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.");
+	} // mainë©”ì„œë“œì˜ ë
 
 	static File createFile(String fileName) {
 		try {
 			if (fileName==null || fileName.equals(""))
-				throw new Exception("ÆÄÀÏÀÌ¸§ÀÌ À¯È¿ÇÏÁö ¾Ê½À´Ï´Ù.");
+				throw new Exception("íŒŒì¼ì´ë¦„ì´ ìœ íš¨í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		} catch (Exception e) {
-             // fileNameÀÌ ºÎÀûÀıÇÑ °æ¿ì, ÆÄÀÏ ÀÌ¸§À» 'Á¦¸ñ¾øÀ½.txt'·Î ÇÑ´Ù.
-			fileName = "Á¦¸ñ¾øÀ½.txt";	 
+             // fileNameì´ ë¶€ì ì ˆí•œ ê²½ìš°, íŒŒì¼ ì´ë¦„ì„ 'ì œëª©ì—†ìŒ.txt'ë¡œ í•œë‹¤.
+			fileName = "ì œëª©ì—†ìŒ.txt";	 
 		} finally {
-			File f = new File(fileName); // FileÅ¬·¡½ºÀÇ °´Ã¼¸¦ ¸¸µç´Ù.
-			createNewFile(f);		     // »ı¼ºµÈ °´Ã¼¸¦ ÀÌ¿ëÇØ¼­ ÆÄÀÏÀ» »ı¼ºÇÑ´Ù.
+			File f = new File(fileName); // Fileí´ë˜ìŠ¤ì˜ ê°ì²´ë¥¼ ë§Œë“ ë‹¤.
+			createNewFile(f);		     // ìƒì„±ëœ ê°ì²´ë¥¼ ì´ìš©í•´ì„œ íŒŒì¼ì„ ìƒì„±í•œë‹¤.
 			return f;
 		}
-	}	// createFile¸Ş¼­µåÀÇ ³¡
+	}	// createFileë©”ì„œë“œì˜ ë
 
 	static void createNewFile(File f) {
 		try {
-			f.createNewFile();		// ÆÄÀÏÀ» »ı¼ºÇÑ´Ù.
+			f.createNewFile();		// íŒŒì¼ì„ ìƒì„±í•œë‹¤.
 		} catch(Exception e){ }
-	}	// createNewFile¸Ş¼­µåÀÇ ³¡
+	}	// createNewFileë©”ì„œë“œì˜ ë
 } 

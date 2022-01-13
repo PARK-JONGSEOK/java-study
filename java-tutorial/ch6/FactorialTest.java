@@ -8,6 +8,6 @@ class FactorialTest {
 
 		if (n == 1) return 1;		
 
-		return n * factorial(n-1); // ¸Ş¼­µå ÀÚ½ÅÀ» È£ÃâÇÑ´Ù.
+		return n * factorial(n-1); // ë©”ì„œë“œ ìì‹ ì„ í˜¸ì¶œí•œë‹¤.
 	}
 }

@@ -7,19 +7,19 @@ class DateFormatterEx1 {
 
 		String[] patternArr = {
 				"yyyy-MM-dd HH:mm:ss",         
-				"''yy³â MMM ddÀÏ E¿äÀÏ", 	
+				"''yyë…„ MMM ddì¼ Eìš”ì¼", 	
 				"yyyy-MM-dd HH:mm:ss.SSS Z VV",	
 				"yyyy-MM-dd hh:mm:ss a",			
-				"¿À´ÃÀº ¿Ã ÇØÀÇ D¹øÂ° ³¯ÀÔ´Ï´Ù.",     	
-				"¿À´ÃÀº ÀÌ ´ŞÀÇ d¹øÂ° ³¯ÀÔ´Ï´Ù.",     	
-				"¿À´ÃÀº ¿Ã ÇØÀÇ w¹øÂ° ÁÖÀÔ´Ï´Ù.",     	
-				"¿À´ÃÀº ÀÌ ´ŞÀÇ W¹øÂ° ÁÖÀÔ´Ï´Ù.",     	
-				"¿À´ÃÀº ÀÌ ´ŞÀÇ W¹øÂ° E¿äÀÏÀÔ´Ï´Ù."   	
+				"ì˜¤ëŠ˜ì€ ì˜¬ í•´ì˜ Dë²ˆì§¸ ë‚ ì…ë‹ˆë‹¤.",     	
+				"ì˜¤ëŠ˜ì€ ì´ ë‹¬ì˜ dë²ˆì§¸ ë‚ ì…ë‹ˆë‹¤.",     	
+				"ì˜¤ëŠ˜ì€ ì˜¬ í•´ì˜ wë²ˆì§¸ ì£¼ì…ë‹ˆë‹¤.",     	
+				"ì˜¤ëŠ˜ì€ ì´ ë‹¬ì˜ Wë²ˆì§¸ ì£¼ì…ë‹ˆë‹¤.",     	
+				"ì˜¤ëŠ˜ì€ ì´ ë‹¬ì˜ Wë²ˆì§¸ Eìš”ì¼ì…ë‹ˆë‹¤."   	
 		};
 
 		for(String p : patternArr) {
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern(p);
 			System.out.println(zdateTime.format(formatter));	
 		}
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 }

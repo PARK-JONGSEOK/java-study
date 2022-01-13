@@ -2,7 +2,7 @@ import java.util.*;
 
 class StringTokenizerEx3 { 
 	public static void main(String args[]) { 
-		String source = "1,±èÃµÀç,100,100,100|2,¹Ú¼öÀç,95,80,90|3,ÀÌÀÚ¹Ù,80,90,90";
+		String source = "1,ê¹€ì²œì¬,100,100,100|2,ë°•ìˆ˜ì¬,95,80,90|3,ì´ìë°”,80,90,90";
 		StringTokenizer st = new StringTokenizer(source, "|"); 
 
 		while(st.hasMoreTokens()) {
@@ -14,5 +14,5 @@ class StringTokenizerEx3 {
 			}
 			System.out.println("------");
 		}
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 }

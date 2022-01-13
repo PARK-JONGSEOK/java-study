@@ -1,4 +1,4 @@
-import java.util.regex.*;	// Pattern°ú Matcher°¡ ¼ÓÇÑ ÆĞÅ°Áö
+import java.util.regex.*;	// Patternê³¼ Matcherê°€ ì†í•œ íŒ¨í‚¤ì§€
 
 class RegularEx2 {
 	public static void main(String[] args) {
@@ -14,7 +14,7 @@ class RegularEx2 {
 
 		for(int x=0; x < pattern.length; x++) {
 			Pattern p = Pattern.compile(pattern[x]);
-			System.out.print("Pattern : " + pattern[x] + "  °á°ú: ");
+			System.out.print("Pattern : " + pattern[x] + "  ê²°ê³¼: ");
 			for(int i=0; i < data.length; i++) {
 				Matcher m = p.matcher(data[i]);
 				if(m.matches())

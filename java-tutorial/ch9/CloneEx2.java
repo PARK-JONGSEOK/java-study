@@ -4,7 +4,7 @@ class CloneEx2 {
 	public static void main(String[] args){
 		int[] arr = {1,2,3,4,5};
 
-        // ¹è¿­ arrÀ» º¹Á¦ÇØ¼­ °°Àº ³»¿ëÀÇ »õ·Î¿î ¹è¿­À» ¸¸µç´Ù.
+        // ë°°ì—´ arrì„ ë³µì œí•´ì„œ ê°™ì€ ë‚´ìš©ì˜ ìƒˆë¡œìš´ ë°°ì—´ì„ ë§Œë“ ë‹¤.
 		int[] arrClone = arr.clone(); 
 		arrClone[0]= 6;
 

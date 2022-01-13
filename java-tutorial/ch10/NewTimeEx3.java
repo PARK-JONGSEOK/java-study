@@ -18,19 +18,19 @@ class NewTimeEx3 {
 		p(today); // System.out.println(today);
 		p(date);
 
-		p(today.with(firstDayOfNextMonth()));        // ´ÙÀ½ ´ŞÀÇ Ã¹ ³¯
-		p(today.with(firstDayOfMonth()));            // ÀÌ ´ŞÀÇ Ã¹ ³¯
-		p(today.with(lastDayOfMonth()));             // ÀÌ ´ŞÀÇ ¸¶Áö¸· ³¯
-		p(today.with(firstInMonth(TUESDAY)));        // ÀÌ ´ŞÀÇ Ã¹¹øÂ° È­¿äÀÏ
-		p(today.with(lastInMonth(TUESDAY)));         // ÀÌ ´ŞÀÇ ¸¶Áö¸· È­¿äÀÏ
-		p(today.with(previous(TUESDAY)));            // Áö³­ ÁÖ È­¿äÀÏ
-		p(today.with(previousOrSame(TUESDAY)));      // Áö³­ ÁÖ È­¿äÀÏ(¿À´Ã Æ÷ÇÔ)
-		p(today.with(next(TUESDAY)));                // ´ÙÀ½ ÁÖ È­¿äÀÏ
-		p(today.with(nextOrSame(TUESDAY)));          // ´ÙÀ½ ÁÖ È­¿äÀÏ(¿À´Ã Æ÷ÇÔ)
-		p(today.with(dayOfWeekInMonth(4, TUESDAY))); // ÀÌ ´ŞÀÇ 4¹øÂ° È­¿äÀÏ
+		p(today.with(firstDayOfNextMonth()));        // ë‹¤ìŒ ë‹¬ì˜ ì²« ë‚ 
+		p(today.with(firstDayOfMonth()));            // ì´ ë‹¬ì˜ ì²« ë‚ 
+		p(today.with(lastDayOfMonth()));             // ì´ ë‹¬ì˜ ë§ˆì§€ë§‰ ë‚ 
+		p(today.with(firstInMonth(TUESDAY)));        // ì´ ë‹¬ì˜ ì²«ë²ˆì§¸ í™”ìš”ì¼
+		p(today.with(lastInMonth(TUESDAY)));         // ì´ ë‹¬ì˜ ë§ˆì§€ë§‰ í™”ìš”ì¼
+		p(today.with(previous(TUESDAY)));            // ì§€ë‚œ ì£¼ í™”ìš”ì¼
+		p(today.with(previousOrSame(TUESDAY)));      // ì§€ë‚œ ì£¼ í™”ìš”ì¼(ì˜¤ëŠ˜ í¬í•¨)
+		p(today.with(next(TUESDAY)));                // ë‹¤ìŒ ì£¼ í™”ìš”ì¼
+		p(today.with(nextOrSame(TUESDAY)));          // ë‹¤ìŒ ì£¼ í™”ìš”ì¼(ì˜¤ëŠ˜ í¬í•¨)
+		p(today.with(dayOfWeekInMonth(4, TUESDAY))); // ì´ ë‹¬ì˜ 4ë²ˆì§¸ í™”ìš”ì¼
 	}
 
-	static void p(Object obj) { // ¶óÀÎÀÇ ±æÀÌ¸¦ ÁÙÀÌ±â À§ÇØ »õ·Î Á¤ÀÇÇÑ ¸Ş¼­µå
+	static void p(Object obj) { // ë¼ì¸ì˜ ê¸¸ì´ë¥¼ ì¤„ì´ê¸° ìœ„í•´ ìƒˆë¡œ ì •ì˜í•œ ë©”ì„œë“œ
 		System.out.println(obj);
 	}
 }

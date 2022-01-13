@@ -2,11 +2,11 @@ import java.util.*;
 
 class ArrayListEx2 { 
 	public static void main(String[] args) { 
-		final int LIMIT = 10;	// ÀÚ¸£°íÀÚ ÇÏ´Â ±ÛÀÚÀÇ °³¼ö¸¦ ÁöÁ¤ÇÑ´Ù.
+		final int LIMIT = 10;	// ìë¥´ê³ ì í•˜ëŠ” ê¸€ìì˜ ê°œìˆ˜ë¥¼ ì§€ì •í•œë‹¤.
 		String source = "0123456789abcdefghijABCDEFGHIJ!@#$%^&*()ZZZ"; 
 		int length = source.length(); 
 
-		List list = new ArrayList(length/LIMIT + 10); // Å©±â¸¦ ¾à°£ ¿©À¯ ÀÖ°Ô Àâ´Â´Ù.
+		List list = new ArrayList(length/LIMIT + 10); // í¬ê¸°ë¥¼ ì•½ê°„ ì—¬ìœ  ìˆê²Œ ì¡ëŠ”ë‹¤.
 
 		for(int i=0; i < length; i+=LIMIT) { 
 			if(i+LIMIT < length ) 

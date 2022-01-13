@@ -2,17 +2,17 @@ class StringEx7 {
 	public static void main(String[] args) {
 		String fullName = "Hello.java";
 
-		// fullName¿¡¼­ '.'ÀÇ À§Ä¡¸¦ Ã£´Â´Ù.
+		// fullNameì—ì„œ '.'ì˜ ìœ„ì¹˜ë¥¼ ì°¾ëŠ”ë‹¤.
 		int index = fullName.indexOf('.');
 
-		// fullNameÀÇ Ã¹¹øÂ° ±ÛÀÚºÎÅÍ '.'ÀÌ ÀÖ´Â °÷±îÁö ¹®ÀÚ¿­À» ÃßÃâÇÑ´Ù.
+		// fullNameì˜ ì²«ë²ˆì§¸ ê¸€ìë¶€í„° '.'ì´ ìˆëŠ” ê³³ê¹Œì§€ ë¬¸ìì—´ì„ ì¶”ì¶œí•œë‹¤.
 		String fileName = fullName.substring(0, index);
 
- 	    // '.'ÀÇ ´ÙÀ½ ¹®ÀÚ ºÎÅÍ ½ÃÀÛÇØ¼­ ¹®ÀÚ¿­ÀÇ ³¡±îÁö ÃßÃâÇÑ´Ù.
-		// fullName.substring(index+1, fullName.length());ÀÇ °á°ú¿Í °°´Ù.
+ 	    // '.'ì˜ ë‹¤ìŒ ë¬¸ì ë¶€í„° ì‹œì‘í•´ì„œ ë¬¸ìì—´ì˜ ëê¹Œì§€ ì¶”ì¶œí•œë‹¤.
+		// fullName.substring(index+1, fullName.length());ì˜ ê²°ê³¼ì™€ ê°™ë‹¤.
 		String ext = fullName.substring(index+1);
 
-		System.out.println(fullName + "ÀÇ È®ÀåÀÚ¸¦ Á¦¿ÜÇÑ ÀÌ¸§Àº " + fileName);
-		System.out.println(fullName + "ÀÇ È®ÀåÀÚ´Â " + ext);
+		System.out.println(fullName + "ì˜ í™•ì¥ìë¥¼ ì œì™¸í•œ ì´ë¦„ì€ " + fileName);
+		System.out.println(fullName + "ì˜ í™•ì¥ìëŠ” " + ext);
 	}
 }

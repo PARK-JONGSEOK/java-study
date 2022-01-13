@@ -13,12 +13,12 @@ class EnumEx1 {
 		System.out.println("d1==d2 ? "+ (d1==d2));
 		System.out.println("d1==d3 ? "+ (d1==d3));
 		System.out.println("d1.equals(d3) ? "+ d1.equals(d3));
-//		System.out.println("d2 > d3 ? "+ (d1 > d3)); // ¿¡·¯
+//		System.out.println("d2 > d3 ? "+ (d1 > d3)); // ì—ëŸ¬
 		System.out.println("d1.compareTo(d3) ? "+ (d1.compareTo(d3)));
 		System.out.println("d1.compareTo(d2) ? "+ (d1.compareTo(d2)));
 
 		switch(d1) {
-			case EAST: // Direction.EAST¶ó°í ¾µ ¼ö ¾ø´Ù.
+			case EAST: // Direction.EASTë¼ê³  ì“¸ ìˆ˜ ì—†ë‹¤.
 				System.out.println("The direction is EAST."); 
 				break;
 			case SOUTH:

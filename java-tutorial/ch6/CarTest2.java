@@ -1,7 +1,7 @@
 class Car {
-	String color;		// »ö»ó
-	String gearType;	// º¯¼Ó±â Á¾·ù - auto(ÀÚµ¿), manual(¼öµ¿)
-	int door;			// ¹®ÀÇ °³¼ö
+	String color;		// ìƒ‰ìƒ
+	String gearType;	// ë³€ì†ê¸° ì¢…ë¥˜ - auto(ìë™), manual(ìˆ˜ë™)
+	int door;			// ë¬¸ì˜ ê°œìˆ˜
 
 	Car() {
 		this("white", "auto", 4);	
@@ -22,7 +22,7 @@ class CarTest2 {
 		Car c1 = new Car();	
 		Car c2 = new Car("blue");
 
-		System.out.println("c1ÀÇ color=" + c1.color + ", gearType=" + c1.gearType+ ", door="+c1.door);
-		System.out.println("c2ÀÇ color=" + c2.color + ", gearType=" + c2.gearType+ ", door="+c2.door);
+		System.out.println("c1ì˜ color=" + c1.color + ", gearType=" + c1.gearType+ ", door="+c1.door);
+		System.out.println("c2ì˜ color=" + c2.color + ", gearType=" + c2.gearType+ ", door="+c2.door);
 	}
 }

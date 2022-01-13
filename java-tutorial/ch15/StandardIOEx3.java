@@ -8,7 +8,7 @@ class StandardIOEx3 {
 		try {
 			fos = new FileOutputStream("test.txt");
 			ps  = new PrintStream(fos);
-			System.setOut(ps);    //  System.outÀÇ Ãâ·Â´ë»óÀ» test.txtÆÄÀÏ·Î º¯°æ
+			System.setOut(ps);    //  System.outì˜ ì¶œë ¥ëŒ€ìƒì„ test.txtíŒŒì¼ë¡œ ë³€ê²½
 		} catch(FileNotFoundException e) {
 			System.err.println("File not found.");
 		}

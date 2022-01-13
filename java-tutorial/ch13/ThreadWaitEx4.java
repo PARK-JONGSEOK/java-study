@@ -37,7 +37,7 @@ class Cook implements Runnable {
 }
 
 class Table {
-	String[] dishNames = { "donut","donut","burger" }; // donutÀÇ È®·üÀ» ³ôÀÎ´Ù.
+	String[] dishNames = { "donut","donut","burger" }; // donutì˜ í™•ë¥ ì„ ë†’ì¸ë‹¤.
 	final int MAX_FOOD = 6;
 	private ArrayList<String> dishes = new ArrayList<>();
 
@@ -53,13 +53,13 @@ class Table {
 					String name = Thread.currentThread().getName();
 					System.out.println(name+" is waiting.");
 					try {
-						forCook.await(); // wait(); COOK¾²·¹µå¸¦ ±â´Ù¸®°Ô ÇÑ´Ù.
+						forCook.await(); // wait(); COOKì“°ë ˆë“œë¥¼ ê¸°ë‹¤ë¦¬ê²Œ í•œë‹¤.
 						Thread.sleep(500);
 					} catch(InterruptedException e) {}	
 			}
 
 			dishes.add(dish);
-			forCust.signal(); // notify();  ±â´Ù¸®°í ÀÖ´Â CUST¸¦ ±ú¿ì±â À§ÇÔ.
+			forCust.signal(); // notify();  ê¸°ë‹¤ë¦¬ê³  ìˆëŠ” CUSTë¥¼ ê¹¨ìš°ê¸° ìœ„í•¨.
 			System.out.println("Dishes:" + dishes.toString());
 		} finally {
 			lock.unlock();
@@ -74,7 +74,7 @@ class Table {
 			while(dishes.size()==0) {
 					System.out.println(name+" is waiting.");
 					try {
-						forCust.await(); // wait(); CUST¾²·¹µå¸¦ ±â´Ù¸®°Ô ÇÑ´Ù.
+						forCust.await(); // wait(); CUSTì“°ë ˆë“œë¥¼ ê¸°ë‹¤ë¦¬ê²Œ í•œë‹¤.
 						Thread.sleep(500);
 					} catch(InterruptedException e) {}	
 			}
@@ -83,14 +83,14 @@ class Table {
 				for(int i=0; i<dishes.size();i++) {
 					if(dishName.equals(dishes.get(i))) {
 						dishes.remove(i);
-						forCook.signal(); // notify();ÀáÀÚ°í ÀÖ´Â COOKÀ» ±ú¿ò
+						forCook.signal(); // notify();ì ìê³  ìˆëŠ” COOKì„ ê¹¨ì›€
 						return;
 					}
-				} // for¹®ÀÇ ³¡
+				} // forë¬¸ì˜ ë
 
 				try {
 					System.out.println(name+" is waiting.");
-					forCust.await(); // wait(); // CUST¾²·¹µå¸¦ ±â´Ù¸®°Ô ÇÑ´Ù.
+					forCust.await(); // wait(); // CUSTì“°ë ˆë“œë¥¼ ê¸°ë‹¤ë¦¬ê²Œ í•œë‹¤.
 					Thread.sleep(500);
 				} catch(InterruptedException e) {}	
 			} // while(true)

@@ -9,20 +9,20 @@ class ScannerEx1 {
 			String prompt = ">>"; 
 			System.out.print(prompt); 
 
-			// È­¸éÀ¸·ÎºÎÅÍ ¶óÀÎ´ÜÀ§·Î ÀÔ·Â¹Ş´Â´Ù. 
+			// í™”ë©´ìœ¼ë¡œë¶€í„° ë¼ì¸ë‹¨ìœ„ë¡œ ì…ë ¥ë°›ëŠ”ë‹¤. 
 			String input = s.nextLine(); 
 
-			input = input.trim();        // ÀÔ·Â¹ŞÀº °ª¿¡¼­ ºÒÇÊ¿äÇÑ ¾ÕµÚ °ø¹éÀ» Á¦°ÅÇÑ´Ù. 
-			argArr = input.split(" +");  // ÀÔ·Â¹ŞÀº ³»¿ëÀ» °ø¹éÀ» ±¸ºĞÀÚ·Î ÀÚ¸¥´Ù. 
+			input = input.trim();        // ì…ë ¥ë°›ì€ ê°’ì—ì„œ ë¶ˆí•„ìš”í•œ ì•ë’¤ ê³µë°±ì„ ì œê±°í•œë‹¤. 
+			argArr = input.split(" +");  // ì…ë ¥ë°›ì€ ë‚´ìš©ì„ ê³µë°±ì„ êµ¬ë¶„ìë¡œ ìë¥¸ë‹¤. 
 
 			String command = argArr[0].trim(); 
 
 			if("".equals(command)) continue; 
 
-			// ¸í·É¾î¸¦ ¼Ò¹®ÀÚ·Î ¹Ù²Û´Ù.
+			// ëª…ë ¹ì–´ë¥¼ ì†Œë¬¸ìë¡œ ë°”ê¾¼ë‹¤.
 			command = command.toLowerCase();
   
- 			// q ¶Ç´Â Q¸¦ ÀÔ·ÂÇÏ¸é ½ÇÇàÁ¾·áÇÑ´Ù.
+ 			// q ë˜ëŠ” Që¥¼ ì…ë ¥í•˜ë©´ ì‹¤í–‰ì¢…ë£Œí•œë‹¤.
 			if(command.equals("q")) { 
 				System.exit(0); 
 			} else { 
